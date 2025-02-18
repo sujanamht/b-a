@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B. & A. Associates</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="bg-gray-100 text-sm py-2 px-4 flex justify-between">
+      <div>
+        <a
+          href="https://maps.app.goo.gl/8iK8AHC5xGPrS1378"
+          target="_blank"
+          class="p-2 hover:bg-white hover:rounded hover:text-green-700"
+          ><i class="fa-solid fa-location-dot"></i> Devkota Sadak, Mid
+          Baneshwor, Kathmandu
+        </a>
+        <a
+          href="mailto:birajacharya@gmail.com"
+          class="ml-4 p-2 hover:bg-white hover:text-blue-700"
+          >✉ birajacharya@gmail.com</a
+        >
+        <a
+          href="tel:9801912832"
+          class="ml-4 p-2 hover:bg-white hover:text-red-700"
+          >📞 9801912832</a
+        >
+      </div>
+      <div>
+        <a
+          href="https://www.facebook.com/"
+          class="p-2 text-blue-900 hover:bg-white"
+        >
+          <i class="fab fa-facebook fa-lg"></i>
+        </a>
+        <a href="#" class="p-2 text-blue-900 hover:bg-white"
+          ><i class="fab fa-linkedin fa-lg"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav
+      class="relative bg-gray-700 text-white shadow-md p-4 flex justify-between items-center overflow-hidden"
+    >
+      <!-- <div class="absolute inset-0 w-full h-full">
+        <svg
+          class="w-full h-full"
+          viewBox="0 0 1440 320"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="#06b6d4"
+            d="M0,160 C500,50 900,300 1440,120 L1440,320 L0,320 Z"
+          ></path>
+        </svg>
+      </div> -->
+
+      <div class="relative z-10 flex justify-between w-full p-4">
+        <div class="text-2xl font-bold">B. & A. Associates</div>
+        <ul class="flex space-x-6">
+          <li><a href="#" class="hover:text-gray-300">Home</a></li>
+          <li><a href="#" class="hover:text-gray-300">About Us</a></li>
+          <li><a href="#" class="hover:text-gray-300">Blog</a></li>
+          <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->~
+    <section id="hero" class="relative py-20 w-full h-[600px] overflow-hidden">~
+      <div class="relative w-full h-full">
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-cover bg-center transition-opacity duration-1000 opacity-100"
+          style="background-image: url('slider1.jpg')"
+          id="slide1"
+        >
+          <div class="text-center text-white px-6 ">
+            <h2 class="text-4xl font-bold">Slide 1 Title</h2>
+            <p class="mt-4 text-lg">Slide 1 description goes here.</p>
+            <a
+              href="#about"
+              class="mt-6 inline-block bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600"
+              >Read More</a
+            >
+          </div>
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('slider2.png');" id="slide2">
+            <div class="text-center text-white px-6">
+                <h2 class="text-4xl font-bold">Slide 2 Title</h2>
+                <p class="mt-4 text-lg">Slide 2 description goes here.</p>
+                <a href="#about" class="mt-6 inline-block bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600">Read More</a>
+            </div>
+        </div>
+      </div>
+
+      <!-- Navigation Controls -->
+      <button
+        id="prevSlide"
+        class="absolute left-4 top-1/2 transform -translate-y-1/2 hover:bg-gray-800 hover:text-white p-2 rounded-full"
+      >
+        ❮
+      </button>
+      <button
+        id="nextSlide"
+        class="absolute right-4 top-1/2 transform -translate-y-1/2 hover:bg-gray-800 hover:text-white p-2 rounded-full"
+      >
+        ❯
+      </button>
+    </section>
+
+    <!-- About Section -->
+    <section class="mt-4 px-4 py-20 flex gap-4 bg-cyan-500">
+      <div class="w-1/2 h-[500px] my-5 flex items-center justify-center text-gray-500" style="background-image: url('about.jpg');">
+      
+      </div>
+      <div class="w-2/5 bg-white p-4 shadow-md">
+        <h2 class="text-xl font-bold mb-2">About Us</h2>
+        <p class="text-sm text-gray-700">
+          B. & A. Associates provides innovative financial solutions with
+          expertise in auditing, taxation, and advisory services...
+        </p>
+        <button
+          class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+        >
+          Read More
+        </button>
+      </div> 
+    </section>
+
+<!-- Our services  -->
+
+
+
+
+
+
+
+    <!-- for sliders -->
+    <script>
+      const slides = [document.getElementById("slide1")];
+      let currentIndex = 0;
+
+      document.getElementById("prevSlide").addEventListener("click", () => {
+        slides[currentIndex].classList.remove("opacity-100");
+        slides[currentIndex].classList.add("opacity-0");
+        currentIndex =
+          currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
+        slides[currentIndex].classList.remove("opacity-0");
+        slides[currentIndex].classList.add("opacity-100");
+      });
+
+      document.getElementById("nextSlide").addEventListener("click", () => {
+        slides[currentIndex].classList.remove("opacity-100");
+        slides[currentIndex].classList.add("opacity-0");
+        currentIndex =
+          currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
+        slides[currentIndex].classList.remove("opacity-0");
+        slides[currentIndex].classList.add("opacity-100");
+      });
+    </script>
+  </body>
+</html>
