@@ -10,94 +10,110 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- Top Bar -->
-    <div class="bg-gray-100 text-sm py-2 px-4 flex justify-between">
+    <div
+      class="bg-[#094e60]/85 text-white text-sm py-2 px-4 flex justify-center md:justify-between"
+    >
       <div>
         <a
           href="https://maps.app.goo.gl/8iK8AHC5xGPrS1378"
           target="_blank"
-          class="p-2 hover:bg-white hover:rounded hover:text-green-700"
-          ><i class="fa-solid fa-location-dot"></i> Devkota Sadak, Mid
-          Baneshwor, Kathmandu
+          class="p-2 hover:bg-white rounded hover:text-green-700"
+          ><i class="fa-solid fa-location-dot"></i>
+          <span class="hidden md:inline">
+            Devkota Sadak, Mid Baneshwor, Kathmandu</span
+          >
         </a>
         <a
           href="mailto:birajacharya@gmail.com"
-          class="ml-4 p-2 hover:bg-white hover:text-blue-700"
-          >✉ birajacharya@gmail.com</a
+          class="ml-4 p-2 hover:bg-white rounded hover:text-blue-700"
+          ><i class="fas fa-envelope"></i>
+          <span class="hidden md:inline"> birajacharya@gmail.com</span></a
         >
         <a
           href="tel:9801912832"
-          class="ml-4 p-2 hover:bg-white hover:text-red-700"
-          >📞 9801912832</a
+          class="ml-4 p-2 hover:bg-white rounded hover:text-red-700"
+          ><i class="fas fa-phone"></i>
+          <span class="hidden md:inline"> +977 9801912832</span></a
         >
       </div>
       <div>
         <a
           href="https://www.facebook.com/"
-          class="p-2 text-blue-900 hover:bg-white"
+          class="p-2 rounded text-white hover:bg-white hover:text-blue-700"
         >
           <i class="fab fa-facebook fa-lg"></i>
         </a>
-        <a href="#" class="p-2 text-blue-900 hover:bg-white"
+        <a
+          href="#"
+          class="p-2 rounded text-white hover:bg-white hover:text-blue-700"
           ><i class="fab fa-linkedin fa-lg"></i
         ></a>
       </div>
     </div>
 
-    <!-- Navbar -->
+    <!-- Navbar -------------------------------------------------- -->
     <nav
-      class="relative bg-gray-700 text-white shadow-md p-4 flex justify-between items-center overflow-hidden"
+      class="relative text-gray-700 shadow-md p-2 flex justify-between items-center"
     >
-      <!-- <div class="absolute inset-0 w-full h-full">
-        <svg
-          class="w-full h-full"
-          viewBox="0 0 1440 320"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill="#06b6d4"
-            d="M0,160 C500,50 900,300 1440,120 L1440,320 L0,320 Z"
-          ></path>
-        </svg>
-      </div> -->
-
       <div class="relative z-10 flex justify-between w-full p-4">
-        <div class="text-2xl font-bold">B. & A. Associates</div>
-        <ul class="flex space-x-6">
-          <li><a href="#" class="hover:text-gray-300">Home</a></li>
-          <li><a href="#" class="hover:text-gray-300">About Us</a></li>
-          <li><a href="#" class="hover:text-gray-300">Blog</a></li>
-          <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+        <div class="text-4xl font-bold">B. & A. Associates</div>
+        <ul class="flex space-x-9 text-center text-xl font-bold">
+          <li><a href="#" class="hover:text-red-900">Home</a></li>
+          <li><a href="#" class="hover:text-red-900">About Us</a></li>
+          <li><a href="#" class="hover:text-red-900">Blog</a></li>
+          <li><a href="#" class="hover:text-red-900">Contact</a></li>
         </ul>
       </div>
     </nav>
 
-    <!-- Hero Section -->~
-    <section id="hero" class="relative py-20 w-full h-[600px] overflow-hidden">~
+    <!-- Hero Section -------------------------------------------------- -->
+    <section id="hero" class="relative w-full h-[600px] overflow-hidden">
       <div class="relative w-full h-full">
         <div
           class="absolute inset-0 flex items-center justify-center bg-cover bg-center transition-opacity duration-1000 opacity-100"
           style="background-image: url('slider1.jpg')"
           id="slide1"
         >
-          <div class="text-center text-white px-6 ">
-            <h2 class="text-4xl font-bold">Slide 1 Title</h2>
-            <p class="mt-4 text-lg">Slide 1 description goes here.</p>
+          <div class="text-center text-white px-6 space-y-8">
+            <h2 class="text-5xl text-[#094e60] font-bold">
+              B. & A. Associates
+            </h2>
+            <p class="mt-4 text-xl">
+              B. & A. Associates provides innovative financial solutions with
+              expertise in auditing, taxation, and advisory services...
+            </p>
             <a
               href="#about"
-              class="mt-6 inline-block bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600"
+              class="mt-6 inline-block bg-[#094e60] text-white px-6 py-2 rounded hover:bg-cyan-500"
               >Read More</a
             >
           </div>
         </div>
-        <div class="absolute inset-0 flex items-center justify-center bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('slider2.png');" id="slide2">
-            <div class="text-center text-white px-6">
-                <h2 class="text-4xl font-bold">Slide 2 Title</h2>
-                <p class="mt-4 text-lg">Slide 2 description goes here.</p>
-                <a href="#about" class="mt-6 inline-block bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600">Read More</a>
-            </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-cover bg-center transition-opacity duration-1000 opacity-0"
+          style="background-image: url('slider2.png')"
+          id="slide2"
+        >
+          <div class="text-center text-white px-6">
+            <h2 class="text-4xl font-bold">Slide 2 Title</h2>
+            <p class="mt-4 text-lg">
+              B. & A. Associates provides innovative financial solutions with
+              expertise in auditing, taxation, and advisory services...
+            </p>
+            <a
+              href="#about"
+              class="mt-6 inline-block bg-blue-500 text-white px-6 py-2 rounded hover:bg-cyan-500"
+              >Read More</a
+            >
+          </div>
         </div>
       </div>
 
@@ -116,55 +132,429 @@
       </button>
     </section>
 
-    <!-- About Section -->
-    <section class="mt-4 px-4 py-20 flex gap-4 bg-cyan-500">
-      <div class="w-1/2 h-[500px] my-5 flex items-center justify-center text-gray-500" style="background-image: url('about.jpg');">
-      
+    <!-- About us -------------------------------------------------- -->
+    <section
+      class="mx-44 grid md:grid-cols-2 gap-4 flex items-center justify-center"
+    >
+      <div
+        class="w-full h-[300px] bg-no-repeat"
+        style="background-image: url('about.jpg')"
+      ></div>
+      <div class="w-auto h-[500px] p-4 flex items-center justify-center">
+        <div class="p-4 bg-white w-full mt-4 shadow-lg">
+          <h2 class="text-3xl font-bold">About B. & A. Associates</h2>
+          <p class="mt-4 text-md">
+            B. & A. Associates provides innovative financial solutions with
+            expertise in auditing, taxation, and advisory services... it
+            provides innovative financial solutions with expertise in auditing,
+            taxation, and advisory services... B. & A. Associates provides
+            innovative financial solutions with expertise in auditing, taxation,
+            and advisory services... it provides innovative financial solutions
+            with expertise in auditing, taxation, and advisory services...
+          </p>
+          <button
+            class="my-4 bg-zinc-500 text-white px-4 py-2 rounded hover:bg-cyan-500"
+          >
+            Read More
+          </button>
+        </div>
       </div>
-      <div class="w-2/5 bg-white p-4 shadow-md">
-        <h2 class="text-xl font-bold mb-2">About Us</h2>
-        <p class="text-sm text-gray-700">
-          B. & A. Associates provides innovative financial solutions with
-          expertise in auditing, taxation, and advisory services...
-        </p>
-        <button
-          class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-        >
-          Read More
-        </button>
-      </div> 
     </section>
 
-<!-- Our services  -->
+    <!-- Our services   -------------------------------------------------- -->
+    <div id="services" class="    ">
+      <h2 class="text-4xl text-center font-bold bg-[#1191b1]/10 py-8">
+        Our Services
+      </h2>
 
+      <div class="mx-20 mt-8 grid md:grid-cols-4 gap-8">
+        <!-- Auditing and Assurance (Updated) -->
+        <div
+          class="bg-[#1191b1]/10 rounded-xl shadow-xl flex flex-col justify-center border-b-4 border-cyan-500 hover:scale-105 transition duration-300"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
+            class="w-sm h-auto p-6"
+            alt="Audit Icon"
+          />
+          <h3
+            class="text-xl text-center font-semibold text-gray-700 items-center gap-2"
+          >
+            Auditing and Assurance
+          </h3>
+          <button
+            class="m-8 bg-zinc-500 text-white py-2 rounded hover:bg-cyan-500"
+            onclick="toggleDescription(this)"
+          >
+            MORE
+          </button>
+          <ul
+            class="hidden list-disc list-inside text-gray-600 mt-2 transition-all duration-300 ease-in-out"
+          >
+            <li>Statutory Audit</li>
+            <li>Regulatory Compliance Audit</li>
+            <li>Agreed Upon Procedures</li>
+            <li>Certification Services</li>
+            <li>Convergence to Financial Reporting Standards</li>
+            <li>Revenue Audit</li>
+            <li>Cost Audit</li>
+          </ul>
+        </div>
+        <!-- Internal Audit and Risk Advisory -->
+        <div
+          class="bg-[#1191b1]/10 rounded-xl shadow-xl flex flex-col justify-center border-b-4 border-cyan-500 hover:scale-105 transition duration-300"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
+            class="w-sm h-auto p-6"
+            alt="Audit Icon"
+          />
+          <h3
+            class="text-xl text-center font-semibold text-gray-700 items-center gap-2"
+          >
+            Internal Audit and Risk Advisory
+          </h3>
+          <button
+            class="m-8 bg-zinc-500 text-white py-2 rounded hover:bg-cyan-500"
+          >
+            MORE
+          </button>
+          <ul class="hidden list-disc list-inside text-gray-600 mt-2">
+            <li>Internal Audit</li>
+            <li>Risk Based Review of Internal Controls</li>
+            <li>Process Review</li>
+            <li>Risk Advisory Services</li>
+            <li>Review of Compliance</li>
+            <li>Review of Human Resources Management</li>
+            <li>Systems Audit</li>
+            <li>Process Development</li>
+          </ul>
+        </div>
+        <!-- Tax Audit and Taxation Advisory -->
+        <div
+          class="bg-[#1191b1]/10 rounded-xl shadow-xl flex flex-col justify-center border-b-4 border-cyan-500 hover:scale-105 transition duration-300"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
+            class="w-sm h-auto p-6"
+            alt="Audit Icon"
+          />
+          <h3
+            class="text-xl text-center font-semibold text-gray-700 items-center gap-2"
+          >
+            Tax Audit and Taxation Advisory
+          </h3>
+          <button
+            class="m-8 bg-zinc-500 text-white py-2 rounded hover:bg-cyan-500"
+          >
+            MORE
+          </button>
+          <ul class="hidden list-disc list-inside text-gray-600 mt-2">
+            <li>Corporate Income Tax</li>
+            <li>Value Added Tax (VAT)</li>
+            <li>Tax Audit and Reporting</li>
+            <li>Tax Administration</li>
+            <li>International Taxation</li>
+            <li>Transfer Pricing</li>
+            <li>Personal Income Tax</li>
+            <li>Representation before Authorities</li>
+          </ul>
+        </div>
 
+        <!-- Business Advisory & Accountancy -->
+        <div
+          class="bg-[#1191b1]/10 rounded-xl shadow-xl flex flex-col justify-center border-b-4 border-cyan-500 hover:scale-105 transition duration-300"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
+            class="w-sm h-auto p-6"
+            alt="Audit Icon"
+          />
+          <h3
+            class="text-xl text-center font-semibold text-gray-700 items-center gap-2"
+          >
+            Business Advisory & Accountancy
+          </h3>
+          <button
+            class="m-8 bg-zinc-500 text-white py-2 rounded hover:bg-cyan-500"
+          >
+            MORE
+          </button>
+          <ul class="hidden list-disc list-inside text-gray-600 mt-2">
+            <li>Due Diligence Review</li>
+            <li>Mergers & Acquisition Consultancy</li>
+            <li>Feasibility Study</li>
+            <li>Business Valuation</li>
+            <li>Fraud Investigation</li>
+            <li>Bookkeeping</li>
+            <li>Preparation of Financial Statements</li>
+            <li>Corporate Restructuring</li>
+            <li>Payroll Processing</li>
+            <li>Foreign Direct Investment (FDI)</li>
+            <li>Business Incorporation</li>
+            <li>Preparation of Manuals and Policies</li>
+            <li>Corporate Trainings</li>
+            <li>Other Business Support Services</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
+    <!-- Industries we serve -------------------------------------------------- -->
+    <div class="my-20 bg-white text-black">
+      <h2 class="text-4xl font-bold text-center">Industries We Serve</h2>
+      <div class="m-20 px-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- Left Column -->
+        <div class="space-y-6">
+          <div
+            class="flex flex-row items-center space-x-6 hover:bg-[#F8F8FF] p-2 rounded-3xl"
+          >
+            <div class="border-2 rounded-full hover:bg-cyan-500">
+              <i class="fas fa-industry text-4xl p-4"></i>
+            </div>
+            <div>
+              <p class="text-sm">Wine & Beverage Manufacturing Companies</p>
+              <p class="text-sm">Paint Manufacturing Companies</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-6 bg-[#F8F8FF] p-2 rounded-3xl">
+            <div class="border-2 rounded-full hover:bg-cyan-500">
+              <i class="fas fa-newspaper text-4xl p-4"></i>
+            </div>
+            <div>
+              <p class="text-sm">Print Media Companies</p>
+              <p class="text-sm">Television Media Companies</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-5">
+            <div class="border-2 rounded-full hover:bg-cyan-500">
+              <i class="fas fa-graduation-cap text-4xl p-4"></i>
+            </div>
+            <div>
+              <p class="text-sm">Educational Institutions</p>
+              <p class="text-sm">Research Institutions</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-5">
+            <div class="border-2 rounded-full hover:bg-cyan-500">
+              <i class="fa-solid fa-plane-departure text-4xl p-4"></i>
+            </div>
+            <div>
+              <p class="text-sm">Hospitality Industry</p>
+              <p class="text-sm">Travel and Tourism Industry</p>
+            </div>
+          </div>
+        </div>
 
+        <!-- middle Column -->
+        <div class="space-y-9">
+          <div class="flex items-center space-x-5 bg-[#F8F8FF] p-2 rounded-3xl">
+            <div class="border-2 rounded-full hover:bg-cyan-500">
+              <i class="fa-solid fa-stethoscope text-4xl p-4"></i>
+            </div>
+            <p class="text-sm">Hospital Industry</p>
+          </div>
 
+          <div class="flex items-center space-x-6">
+            <div class="border-2 rounded-full hover:bg-cyan-500">
+              <i class="fas fa-university text-4xl p-4"></i>
+            </div>
+            <div>
+              <p class="text-sm">Bank & Financial Institutions</p>
+              <p class="text-sm">Insurance Companies</p>
+              <p class="text-sm">Fund Management Companies</p>
+              <p class="text-sm">Asset & Securities Management Companies</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-5">
+            <div class="border-2 rounded-full hover:bg-cyan-500">
+              <i class="fas fa-water text-4xl p-4"></i>
+            </div>
+            <p class="text-sm">Hydropower Generation Companies</p>
+          </div>
+        </div>
 
+        <!-- Right Column -->
+        <div class="space-y-9">
+          <div class="flex items-center space-x-6">
+            <div class="border-2 rounded-full hover:bg-cyan-500">
+              <i class="fa-solid fa-building text-4xl p-4"></i>
+            </div>
+            <div>
+              <p class="text-sm">Water and Environment Development Sector</p>
+              <p class="text-sm">Education and Inclusion Development Sector</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-5">
+            <div class="border-2 rounded-full hover:bg-cyan-500">
+              <i class="fa-solid fa-circle-dollar-to-slot text-4xl p-4"></i>
+            </div>
+            <p class="text-sm">Venture Capitals</p>
+          </div>
+          <div class="flex items-center space-x-5">
+            <div class="border-2 rounded-full hover:bg-cyan-500">
+              <i class="fas fa-chart-line text-4xl p-4"></i>
+            </div>
+            <p class="text-sm">Trading Companies</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- for sliders -->
+    <!-- our clients ---------------------------------------------------------------- -->
+
+    <!-- Our Clients Section -->
+    <div id="clients" class="my-14 w-full">
+      <h2 class="text-4xl font-bold text-center bg-[#F8F8FF] p-8 my-8">
+        Our Clients
+      </h2>
+
+      <!-- Swiper Container -->
+      <div class="relative">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper flex items-center justify-center">
+            <div class="swiper-slide">
+              <img src="logo/accor.png" class="h-32 mx-auto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="logo/hotelmechi.png" class="h-32 mx-auto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="logo/ramada.png" class="h-32 mx-auto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="logo/bigdaddy.png" class="h-32 mx-auto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="logo/sarovar.png" class="h-32 mx-auto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="logo/ramada.png" class="h-32 mx-auto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="logo/bigdaddy.png" class="h-32 mx-auto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="logo/sarovar.png" class="h-32 mx-auto" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination Dots -->
+        <div class="swiper-pagination !static mt-4"></div>
+      </div>
+    </div>
+
+    <!-- footer  -------------------------------------------------------------- -->
+    <div id="footer" class="bg-[#0a5468] text-white py-10">
+      <div
+        class="container mx-auto px-6 lg:px-20 grid grid-cols-1 md:grid-cols-3 gap-8"
+      >
+        <!-- Company Info -->
+        <div>
+          <h2 class="text-xl font-bold">B. & A. ASSOCIATES</h2>
+          <p class="mt-4 text-sm">
+            <i class="fa-solid fa-location-dot p-1"></i> Devkota Sadak, Mid
+            Baneshwor, Kathmandu, Nepal
+          </p>
+          <p class="mt-1 text-sm">
+            <i class="fas fa-phone p-1"></i> +977 9801912832
+          </p>
+          <p class="mt-1 text-sm">
+            <i class="fas fa-envelope p-1"></i>
+            <a
+              href="mailto:birajacharya@gmail.com"
+              class="underline hover:text-gray-300"
+              >birajacharya@gmail.com</a
+            >
+          </p>
+          <div class="flex space-x-4 mt-4">
+            <a href="#" class="bg-[#0e7994] px-3 py-2 rounded-lg"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="bg-[#0e7994] px-3 py-2 rounded-lg"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="bg-[#0e7994] px-3 py-2 rounded-lg"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h2 class="text-lg font-bold">Our Services</h2>
+          <ul class="mt-3 space-y-3">
+            <li>
+              <a href="#" class="hover:text-gray-300"
+                >› Auditing and Assurance</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-300"
+                >› Internal Audit and Risk Advisory</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-300"
+                >› Tax Audit and Taxation Advisory</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-300"
+                >› Business Advisory & Accountancy</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Facebook Embed -->
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.7196065433304!2d85.33472217471571!3d27.695059826034573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1999c4639299%3A0xc89109abaeb744f3!2sDevkota%20Sadak%2C%20Kathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2sus!4v1740083908773!5m2!1sen!2sus"
+            width="400"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <div
+      class="text-center text-white text-sm bg-[#094e60] border-t border-gray-700 p-4"
+    >
+      © Copyright <span class="font-bold">B. & A. Associates</span>. All Rights
+      Reserved <br />
+      Designed & Developed by
+      <span class="font-bold">IT Nepal Solutions</span>
+    </div>
+
+    <!-- for sliders -------------------------------------------------- -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
-      const slides = [document.getElementById("slide1")];
-      let currentIndex = 0;
-
-      document.getElementById("prevSlide").addEventListener("click", () => {
-        slides[currentIndex].classList.remove("opacity-100");
-        slides[currentIndex].classList.add("opacity-0");
-        currentIndex =
-          currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
-        slides[currentIndex].classList.remove("opacity-0");
-        slides[currentIndex].classList.add("opacity-100");
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true, // Enable Loop
+        autoplay: { delay: 10000 },
+        pagination: { el: ".swiper-pagination", clickable: true }, // Dots Enabled
+        loopFillGroupWithBlank: false, // Prevents empty spaces
+        breakpoints: {
+          320: { slidesPerView: 2 },
+          640: { slidesPerView: 3 },
+          1024: { slidesPerView: 4 },
+        },
       });
 
-      document.getElementById("nextSlide").addEventListener("click", () => {
-        slides[currentIndex].classList.remove("opacity-100");
-        slides[currentIndex].classList.add("opacity-0");
-        currentIndex =
-          currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
-        slides[currentIndex].classList.remove("opacity-0");
-        slides[currentIndex].classList.add("opacity-100");
-      });
+      function toggleDescription(button) {
+        const description = button.nextElementSibling;
+        description.classList.toggle("hidden");
+      }
     </script>
   </body>
 </html>
