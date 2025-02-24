@@ -1,0 +1,449 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B. & A. Associates</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      * {
+        font-family: "Inter Tight", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+      h2 {
+        font-family: "Content";
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="bg-[#094e60]/85 text-white text-sm py-2 px-4 flex justify-center md:justify-between"
+    >
+      <div>
+        <a
+          href="https://maps.app.goo.gl/8iK8AHC5xGPrS1378"
+          target="_blank"
+          class="p-2 hover:bg-white rounded hover:text-green-700"
+          ><i class="fa-solid fa-location-dot"></i>
+          <span class="hidden md:inline">
+            Devkota Sadak, Mid Baneshwor, Kathmandu</span
+          >
+        </a>
+        <a
+          href="mailto:birajacharya@gmail.com"
+          class="ml-4 p-2 hover:bg-white rounded hover:text-blue-700"
+          ><i class="fas fa-envelope"></i>
+          <span class="hidden md:inline"> birajacharya@gmail.com</span></a
+        >
+        <a
+          href="tel:9801912832"
+          class="ml-4 p-2 hover:bg-white rounded hover:text-red-700"
+          ><i class="fas fa-phone"></i>
+          <span class="hidden md:inline"> +977 9801912832</span></a
+        >
+      </div>
+      <div>
+        <a
+          href="https://www.facebook.com/"
+          class="p-2 rounded text-white hover:bg-white hover:text-blue-700"
+        >
+          <i class="fab fa-facebook fa-lg"></i>
+        </a>
+        <a
+          href="#"
+          class="p-2 rounded text-white hover:bg-white hover:text-blue-700"
+          ><i class="fab fa-linkedin fa-lg"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- Navbar -------------------------------------------------- -->
+    <nav
+      class="relative text-gray-700 shadow-md p-2 flex justify-between items-center"
+    >
+      <div class="relative z-10 flex justify-between w-full p-4">
+        <div class="text-4xl font-bold">B. & A. Associates</div>
+        <ul class="flex space-x-9 text-center text-xl font-bold">
+          <li>
+            <a href="index.html" class="hover:text-red-900 active:text-red-900"
+              >Home</a
+            >
+          </li>
+          <li><a href="about.html" class="hover:text-red-900">About Us</a></li>
+          <li><a href="blog.html" class="hover:text-red-900">Blog</a></li>
+          <li><a href="contact.html" class="hover:text-red-900">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--blog  ----------------------------------------------------- -->
+    <div
+      class="relative h-60 w-full bg-[url('/blog.jpg')] bg-cover bg-center flex items-center justify-center"
+    >
+      <!-- Black Overlay -->
+      <div
+        class="absolute inset-0 bg-black bg-opacity-75 flex justify-center items-end"
+      >
+        <h2 class="text-5xl lg:text-7xl font-bold mb-14 text-white">BLOG</h2>
+      </div>
+    </div>
+    <section class="py-12 bg-gray-100">
+      <div class="container mx-auto px-6 lg:px-20">
+        <h2 class="text-4xl font-bold text-center text-gray-900 mb-10">
+          Our Blog
+        </h2>
+
+        <!-- Blog Grid 1 ---------------------------->
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Blog Post 1 -->
+          <div
+            class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col "
+          >
+            <a href="blogDetail.html">
+              <img
+                src="blog1.png"
+                alt="Blog Image"
+                class="w-full h-48 object-cover transition duration-300 hover:scale-110"
+              />
+              <div class="p-6 flex-grow">
+                <h3 class="text-lg font-bold text-blue-900 mb-2 uppercase">
+                  The Rise of B. & A. Associates – A Trusted Chartered
+                  Accountancy Firm in Nepal
+                </h3>
+                <p class="text-gray-700 text-sm">
+                  Since its establishment in 2017, B. & A. Associates has grown
+                  into one of Nepal’s most trusted chartered accountancy
+                  firms...
+                </p>
+              </div></a
+            >
+          </div>
+
+          <!-- Blog Post 2 -->
+          <div
+            class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col"
+          >
+            <img
+              src="blog.jpg"
+              alt="Blog Image"
+              class="w-full h-48 object-cover transition duration-300 hover:scale-110"
+            />
+            <div class="p-6 flex-grow">
+              <h3 class="text-lg font-bold text-blue-900 mb-2 uppercase">
+                Why Businesses Trust B. & A. Associates for Financial Advisory &
+                Auditing
+              </h3>
+              <p class="text-gray-700 text-sm">
+                In today’s competitive business environment, having a reliable
+                financial partner is essential for long-term success...
+              </p>
+            </div>
+          </div>
+
+          <!-- Blog Post 3 -->
+          <div
+            class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col"
+          >
+            <img
+              src="about.jpg"
+              alt="Blog Image"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6 flex-grow">
+              <h3 class="text-lg font-bold text-blue-900 mb-2 uppercase">
+                B. & A. Associates' Impact on Nepal’s Financial Sector
+              </h3>
+              <p class="text-gray-700 text-sm">
+                B. & A. Associates has played a key role in Nepal’s financial
+                industry by providing top-tier auditing, taxation, and advisory
+                services...
+              </p>
+            </div>
+          </div>
+
+          <!-- Blog Grid 2----------------- -->
+
+          
+            <!-- Blog Post 1 -->
+            <div
+              class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col"
+            >
+              <a href="blogDetail.html">
+                <img
+                  src="blog1.png"
+                  alt="Blog Image"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-6 flex-grow">
+                  <h3 class="text-lg font-bold text-blue-900 mb-2 uppercase">
+                    The Rise of B. & A. Associates – A Trusted Chartered
+                    Accountancy Firm in Nepal
+                  </h3>
+                  <p class="text-gray-700 text-sm">
+                    Since its establishment in 2017, B. & A. Associates has grown
+                    into one of Nepal’s most trusted chartered accountancy
+                    firms...
+                  </p>
+                </div></a
+              >
+            </div>
+  
+            <!-- Blog Post 2 -->
+            <div
+              class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col"
+            >
+              <img
+                src="blog.jpg"
+                alt="Blog Image"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6 flex-grow">
+                <h3 class="text-lg font-bold text-blue-900 mb-2 uppercase">
+                  Why Businesses Trust B. & A. Associates for Financial Advisory &
+                  Auditing
+                </h3>
+                <p class="text-gray-700 text-sm">
+                  In today’s competitive business environment, having a reliable
+                  financial partner is essential for long-term success...
+                </p>
+              </div>
+            </div>
+  
+            <!-- Blog Post 3 -->
+            <div
+              class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col"
+            >
+              <img
+                src="about.jpg"
+                alt="Blog Image"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6 flex-grow">
+                <h3 class="text-lg font-bold text-blue-900 mb-2 uppercase">
+                  B. & A. Associates' Impact on Nepal’s Financial Sector
+                </h3>
+                <p class="text-gray-700 text-sm">
+                  B. & A. Associates has played a key role in Nepal’s financial
+                  industry by providing top-tier auditing, taxation, and advisory
+                  services...
+                </p>
+              </div>
+            </div> <!-- Blog Post 1 -->
+            <div
+              class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col"
+            >
+              <a href="blogDetail.html">
+                <img
+                  src="blog1.png"
+                  alt="Blog Image"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-6 flex-grow">
+                  <h3 class="text-lg font-bold text-blue-900 mb-2 uppercase">
+                    The Rise of B. & A. Associates – A Trusted Chartered
+                    Accountancy Firm in Nepal
+                  </h3>
+                  <p class="text-gray-700 text-sm">
+                    Since its establishment in 2017, B. & A. Associates has grown
+                    into one of Nepal’s most trusted chartered accountancy
+                    firms...
+                  </p>
+                </div></a
+              >
+            </div>
+  
+            <!-- Blog Post 2 -->
+            <div
+              class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col"
+            >
+              <img
+                src="blog.jpg"
+                alt="Blog Image"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6 flex-grow">
+                <h3 class="text-lg font-bold text-blue-900 mb-2 uppercase">
+                  Why Businesses Trust B. & A. Associates for Financial Advisory &
+                  Auditing
+                </h3>
+                <p class="text-gray-700 text-sm">
+                  In today’s competitive business environment, having a reliable
+                  financial partner is essential for long-term success...
+                </p>
+              </div>
+            </div>
+  
+            <!-- Blog Post 3 -->
+            <div
+              class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col"
+            >
+              <img
+                src="about.jpg"
+                alt="Blog Image"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6 flex-grow">
+                <h3 class="text-lg font-bold text-blue-900 mb-2 uppercase">
+                  B. & A. Associates' Impact on Nepal’s Financial Sector
+                </h3>
+                <p class="text-gray-700 text-sm">
+                  B. & A. Associates has played a key role in Nepal’s financial
+                  industry by providing top-tier auditing, taxation, and advisory
+                  services...
+                </p>
+              </div>
+            </div>
+  
+            <!-- Blog Grid 2----------------- -->
+  
+            
+              <!-- Blog Post 1 -->
+              <div
+                class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col"
+              >
+                <a href="blogDetail.html">
+                  <img
+                    src="blog1.png"
+                    alt="Blog Image"
+                    class="w-full h-48 object-cover"
+                  />
+                  <div class="p-6 flex-grow">
+                    <h3 class="text-lg font-bold text-blue-900 mb-2 uppercase">
+                      The Rise of B. & A. Associates – A Trusted Chartered
+                      Accountancy Firm in Nepal
+                    </h3>
+                    <p class="text-gray-700 text-sm">
+                      Since its establishment in 2017, B. & A. Associates has grown
+                      into one of Nepal’s most trusted chartered accountancy
+                      firms...
+                    </p>
+                  </div></a
+                >
+              </div>
+    
+              <!-- Blog Post 2 -->
+              <div
+                class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col"
+              >
+                <img
+                  src="blog.jpg"
+                  alt="Blog Image"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-6 flex-grow">
+                  <h3 class="text-lg font-bold text-blue-900 mb-2 uppercase">
+                    Why Businesses Trust B. & A. Associates for Financial Advisory &
+                    Auditing
+                  </h3>
+                  <p class="text-gray-700 text-sm">
+                    In today’s competitive business environment, having a reliable
+                    financial partner is essential for long-term success...
+                  </p>
+                </div>
+              </div>
+    
+              <!-- Blog Post 3 -->
+              <div
+                class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col"
+              >
+                <img
+                  src="about.jpg"
+                  alt="Blog Image"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-6 flex-grow">
+                  <h3 class="text-lg font-bold text-blue-900 mb-2 uppercase">
+                    B. & A. Associates' Impact on Nepal’s Financial Sector
+                  </h3>
+                  <p class="text-gray-700 text-sm">
+                    B. & A. Associates has played a key role in Nepal’s financial
+                    industry by providing top-tier auditing, taxation, and advisory
+                    services...
+                  </p>
+                </div>
+              </div>
+        </div>
+<!-- Pagination (Place below the Blog Grid) -->
+<div class="flex justify-center mt-8">
+    <nav class="flex space-x-2" id="pagination">
+      <button id="prevPage" class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400">« Prev</button>
+      <div id="pageNumbers" class="flex space-x-2"></div> <!-- Dynamic Page Numbers -->
+      <button id="nextPage" class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400">Next »</button>
+    </nav>
+  </div>
+  
+  <!-- JavaScript to Control Pagination -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const blogsPerPage = 5; // ✅ Set to any number of blogs per page
+      let currentPage = 1;
+  
+      const blogPosts = document.querySelectorAll(".blog-post"); // ✅ Select all blog posts
+      const totalPages = Math.ceil(blogPosts.length / blogsPerPage);
+      const pageNumbersContainer = document.getElementById("pageNumbers");
+      const prevButton = document.getElementById("prevPage");
+      const nextButton = document.getElementById("nextPage");
+  
+      function generatePageNumbers() {
+        pageNumbersContainer.innerHTML = ""; // Clear previous numbers
+        for (let i = 1; i <= totalPages; i++) {
+          let btn = document.createElement("button");
+          btn.className = "page-num px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400";
+          btn.dataset.page = i;
+          btn.innerText = i;
+          pageNumbersContainer.appendChild(btn);
+        }
+      }
+  
+      function showPage(page) {
+        currentPage = page;
+  
+        // ✅ Show only blogs that belong to the current page
+        blogPosts.forEach((blog, index) => {
+          blog.style.display = (index >= (page - 1) * blogsPerPage && index < page * blogsPerPage) ? "block" : "none";
+        });
+  
+        // ✅ Update active pagination button
+        document.querySelectorAll(".page-num").forEach(btn => {
+          btn.classList.remove("bg-blue-600", "text-white");
+          btn.classList.add("bg-gray-300", "text-gray-700");
+          if (parseInt(btn.dataset.page) === page) {
+            btn.classList.add("bg-blue-600", "text-white");
+          }
+        });
+  
+        // ✅ Disable Prev/Next if at start or end
+        prevButton.style.display = (page === 1) ? "none" : "inline-block";
+        nextButton.style.display = (page === totalPages) ? "none" : "inline-block";
+      }
+  
+      // ✅ Event Listeners for Page Numbers
+      pageNumbersContainer.addEventListener("click", function (event) {
+        if (event.target.classList.contains("page-num")) {
+          showPage(parseInt(event.target.dataset.page));
+        }
+      });
+  
+      // ✅ Prev & Next Button Controls
+      prevButton.addEventListener("click", () => showPage(currentPage - 1));
+      nextButton.addEventListener("click", () => showPage(currentPage + 1));
+  
+      // ✅ Generate page numbers dynamically & Initialize first page
+      generatePageNumbers();
+      showPage(1);
+    });
+  </script>
+  
+  </body>
+</html>

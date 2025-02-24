@@ -15,6 +15,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <style>
+      * {
+        font-family: "Inter Tight", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+      h2 {
+        font-family: "Content";
+        font-size: 22px;
+      }
+    </style>
   </head>
   <body>
     <!-- Top Bar -->
@@ -66,10 +77,14 @@
       <div class="relative z-10 flex justify-between w-full p-4">
         <div class="text-4xl font-bold">B. & A. Associates</div>
         <ul class="flex space-x-9 text-center text-xl font-bold">
-          <li><a href="#" class="hover:text-red-900">Home</a></li>
-          <li><a href="#" class="hover:text-red-900">About Us</a></li>
-          <li><a href="#" class="hover:text-red-900">Blog</a></li>
-          <li><a href="#" class="hover:text-red-900">Contact</a></li>
+          <li>
+            <a href="index.html" class="hover:text-red-900 active:text-red-900"
+              >Home</a
+            >
+          </li>
+          <li><a href="about.html" class="hover:text-red-900">About Us</a></li>
+          <li><a href="blog.html" class="hover:text-red-900">Blog</a></li>
+          <li><a href="contact.html" class="hover:text-red-900">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -91,7 +106,7 @@
               expertise in auditing, taxation, and advisory services...
             </p>
             <a
-              href="#about"
+              href="about.html"
               class="mt-6 inline-block bg-[#094e60] text-white px-6 py-2 rounded hover:bg-cyan-500"
               >Read More</a
             >
@@ -177,28 +192,50 @@
             class="w-sm h-auto p-6"
             alt="Audit Icon"
           />
-          <h3
-            class="text-xl text-center font-semibold text-gray-700 items-center gap-2"
-          >
-            Auditing and Assurance
+          <h3 class="text-xl text-center font-semibold text-gray-700">
+            Auditing and Assurance Service
           </h3>
           <button
-            class="m-8 bg-zinc-500 text-white py-2 rounded hover:bg-cyan-500"
-            onclick="toggleDescription(this)"
+            class="m-8 bg-zinc-500 text-white py-2 px-4 rounded hover:bg-cyan-500"
+            onclick="openModal()"
           >
             MORE
           </button>
-          <ul
-            class="hidden list-disc list-inside text-gray-600 mt-2 transition-all duration-300 ease-in-out"
+        </div>
+
+        <!-- Popup Modal -->
+        <div
+          id="serviceModal"
+          class="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center hidden transition-opacity duration-300"
+        >
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg w-[450px] sm:w-[550px] relative scale-95 transition-all duration-300"
           >
-            <li>Statutory Audit</li>
-            <li>Regulatory Compliance Audit</li>
-            <li>Agreed Upon Procedures</li>
-            <li>Certification Services</li>
-            <li>Convergence to Financial Reporting Standards</li>
-            <li>Revenue Audit</li>
-            <li>Cost Audit</li>
-          </ul>
+            <button
+              class="absolute top-4 right-4 text-gray-700 hover:text-red-600 text-3xl font-bold"
+              onclick="closeModal()"
+            >
+              &times;
+            </button>
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">
+              Auditing and Assurance
+            </h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 px-4">
+              <li>Statutory Audit</li>
+              <li>Regulatory Compliance Audit</li>
+              <li>Agreed Upon Procedures</li>
+              <li>Certification Services</li>
+              <li>Convergence to Financial Reporting Standards</li>
+              <li>Revenue Audit</li>
+              <li>Cost Audit</li>
+            </ul>
+            <button
+              class="my-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700"
+              onclick="closeModal()"
+            >
+              Close
+            </button>
+          </div>
         </div>
         <!-- Internal Audit and Risk Advisory -->
         <div
@@ -453,14 +490,14 @@
         <!-- Company Info -->
         <div>
           <h2 class="text-xl font-bold">B. & A. ASSOCIATES</h2>
-          <p class="mt-4 text-sm">
+          <p class="mt-4 text-sm text-stone-300">
             <i class="fa-solid fa-location-dot p-1"></i> Devkota Sadak, Mid
             Baneshwor, Kathmandu, Nepal
           </p>
-          <p class="mt-1 text-sm">
+          <p class="mt-1 text-sm text-stone-300">
             <i class="fas fa-phone p-1"></i> +977 9801912832
           </p>
-          <p class="mt-1 text-sm">
+          <p class="mt-1 text-sm text-stone-300">
             <i class="fas fa-envelope p-1"></i>
             <a
               href="mailto:birajacharya@gmail.com"
@@ -484,31 +521,31 @@
         <!-- Services -->
         <div>
           <h2 class="text-lg font-bold">Our Services</h2>
-          <ul class="mt-3 space-y-3">
+          <ul class="mt-3 space-y-3 text-stone-300">
             <li>
-              <a href="#" class="hover:text-gray-300"
+              <a href="#" class="hover:text-gray-50"
                 >› Auditing and Assurance</a
               >
             </li>
             <li>
-              <a href="#" class="hover:text-gray-300"
+              <a href="#" class="hover:text-gray-50"
                 >› Internal Audit and Risk Advisory</a
               >
             </li>
             <li>
-              <a href="#" class="hover:text-gray-300"
+              <a href="#" class="hover:text-gray-50"
                 >› Tax Audit and Taxation Advisory</a
               >
             </li>
             <li>
-              <a href="#" class="hover:text-gray-300"
+              <a href="#" class="hover:text-gray-50"
                 >› Business Advisory & Accountancy</a
               >
             </li>
           </ul>
         </div>
 
-        <!-- Facebook Embed -->
+        <!-- map Embed -->
         <div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.7196065433304!2d85.33472217471571!3d27.695059826034573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1999c4639299%3A0xc89109abaeb744f3!2sDevkota%20Sadak%2C%20Kathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2sus!4v1740083908773!5m2!1sen!2sus"
@@ -527,9 +564,10 @@
       class="text-center text-white text-sm bg-[#094e60] border-t border-gray-700 p-4"
     >
       © Copyright <span class="font-bold">B. & A. Associates</span>. All Rights
-      Reserved <br />
-      Designed & Developed by
-      <span class="font-bold">IT Nepal Solutions</span>
+      Reserved <br /><span class="text-stone-00">
+        Designed & Developed by
+        <span class="font-bold">IT Nepal Solutions</span></span
+      >
     </div>
 
     <!-- for sliders -------------------------------------------------- -->
@@ -550,10 +588,12 @@
           1024: { slidesPerView: 4 },
         },
       });
+      function openModal() {
+        document.getElementById("serviceModal").classList.remove("hidden");
+      }
 
-      function toggleDescription(button) {
-        const description = button.nextElementSibling;
-        description.classList.toggle("hidden");
+      function closeModal() {
+        document.getElementById("serviceModal").classList.add("hidden");
       }
     </script>
   </body>

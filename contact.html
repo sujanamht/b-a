@@ -1,0 +1,181 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Inter Tight", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+      h2 {
+        font-family: "Content";
+        font-size: 22px;
+      }
+    </style>
+    <title>Zeba - Contact Us</title>
+  </head>
+  <body>
+    <div
+      class="bg-[#094e60]/85 text-white text-sm py-2 px-4 flex justify-center md:justify-between"
+    >
+      <div>
+        <a
+          href="https://maps.app.goo.gl/8iK8AHC5xGPrS1378"
+          target="_blank"
+          class="p-2 hover:bg-white rounded hover:text-green-700"
+          ><i class="fa-solid fa-location-dot"></i>
+          <span class="hidden md:inline">
+            Devkota Sadak, Mid Baneshwor, Kathmandu</span
+          >
+        </a>
+        <a
+          href="mailto:birajacharya@gmail.com"
+          class="ml-4 p-2 hover:bg-white rounded hover:text-blue-700"
+          ><i class="fas fa-envelope"></i>
+          <span class="hidden md:inline"> birajacharya@gmail.com</span></a
+        >
+        <a
+          href="tel:9801912832"
+          class="ml-4 p-2 hover:bg-white rounded hover:text-red-700"
+          ><i class="fas fa-phone"></i>
+          <span class="hidden md:inline"> +977 9801912832</span></a
+        >
+      </div>
+      <div>
+        <a
+          href="https://www.facebook.com/"
+          class="p-2 rounded text-white hover:bg-white hover:text-blue-700"
+        >
+          <i class="fab fa-facebook fa-lg"></i>
+        </a>
+        <a
+          href="#"
+          class="p-2 rounded text-white hover:bg-white hover:text-blue-700"
+          ><i class="fab fa-linkedin fa-lg"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- Navbar -------------------------------------------------- -->
+    <nav
+      class="relative text-gray-700 shadow-md p-2 flex justify-between items-center"
+    >
+      <div class="relative z-10 flex justify-between w-full p-4">
+        <div class="text-4xl font-bold">B. & A. Associates</div>
+        <ul class="flex space-x-9 text-center text-xl font-bold">
+          <li>
+            <a href="index.html" class="hover:text-red-900 active:text-red-900"
+              >Home</a
+            >
+          </li>
+          <li><a href="about.html" class="hover:text-red-900">About Us</a></li>
+          <li><a href="#" class="hover:text-red-900">Blog</a></li>
+          <li><a href="#" class="hover:text-red-900">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- contact ------------------------------------------------------- -->
+    <div class="relative text-white mx-auto">
+      <div
+        class="relative bg-cover bg-center h-60 flex justify-center items-center"
+        style="background-image: url('./contact.jpg')"
+      >
+        <div
+          class="absolute inset-0 bg-black bg-opacity-75 flex justify-center items-end"
+        >
+          <h2 class="text-5xl lg:text-7xl font-bold mb-14">CONTACT US</h2>
+        </div>
+      </div>
+    </div>
+    <!-- info & form ------------------------------------------------------------------------ -->
+    <div class="flex flex-col lg:flex-row justify-evenly items-center my-12">
+      <div
+        class="flex flex-col justify-stretch w-full p-4 lg:p-0 lg:w-2/5 space-y-4"
+      >
+        <div
+          class="border border-gray-300 h-30 p-4 text-center bg-white rounded shadow"
+        >
+          <a
+            href="https://www.google.com/maps?ll=42.966304,-71.451938&z=16&t=m&hl=en&gl=US&mapclient=embed&q=379+S+Willow+St+Manchester,+NH+03103"
+          >
+            <i class="fas fa-map-marker-alt text-3xl p-2"></i>
+            <h3 class="font-semibold p-1">Our Address</h3>
+            <text>Devkota Sadak, Mid Baneshwor, Kathmandu</text></a
+          >
+        </div>
+        <div class="flex space-x-4">
+          <div
+            class="border border-gray-300 h-30 p-4 w-full text-center bg-white rounded shadow"
+          >
+            <a href="tel: 603 624 5144">
+              <i class="fas fa-phone text-3xl mt-1"></i>
+              <h3 class="font-semibold p-1">Call Us</h3>
+              <text>+977 9801912832</text></a
+            >
+          </div>
+          <div
+            class="border border-gray-300 h-30 p-4 w-full text-center bg-white rounded shadow"
+          >
+            <a href="mailto:www.zebabeautysalon.com">
+              <i class="fas fa-envelope text-3xl mt-1"></i>
+              <h3 class="font-semibold p-1">Email Us</h3>
+              <text>birajacharya@gmail.com</text></a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="border mt-10 lg:mt-auto border-gray-300 h-30 p-4 lg:w-2/5 bg-white rounded shadow"
+      >
+        <div class="flex flex-col justify-stretch space-y-4">
+          <div class="flex flex-row justify-evenly space-x-3">
+            <textarea
+              class="w-full border border-gray-300 bg-transparent p-2 rounded"
+              rows="1"
+              placeholder="Your Name"
+            ></textarea>
+            <textarea
+              class="w-full border border-gray-300 bg-transparent p-2 rounded"
+              rows="1"
+              placeholder="Your email"
+            ></textarea>
+          </div>
+          <textarea
+            class="border border-gray-300 bg-transparent p-2 rounded"
+            rows="1"
+            placeholder="Subject"
+          ></textarea>
+          <textarea
+            class="border border-gray-300 bg-transparent p-2 rounded"
+            rows="3"
+            placeholder="Your Message"
+          ></textarea>
+          <button
+            class="bg-black hover:bg-gray-300 hover:text-black text-white font-semibold py-2 px-6 rounded"
+          >
+            SEND
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- map --------------------------------------------- -->
+    <div class="w-full my-16">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.7196065433304!2d85.33472217471571!3d27.695059826034573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1999c4639299%3A0xc89109abaeb744f3!2sDevkota%20Sadak%2C%20Kathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2sus!4v1740083908773!5m2!1sen!2sus"
+        width="100%"
+        height="300"
+        style="border: 2"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <!-- footer -------------------------------------------------- -->
+  </body>
+</html>
