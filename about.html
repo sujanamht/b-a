@@ -69,23 +69,69 @@
     </div>
 
     <!-- Navbar -------------------------------------------------- -->
+    <!-- Navbar -->
     <nav
-      class="relative text-gray-700 shadow-md p-2 flex justify-between items-center"
+      class="relative text-gray-700 shadow-md p-4 flex justify-between items-center bg-white"
     >
-      <div class="relative z-10 flex justify-between w-full p-4">
-        <div class="text-4xl font-bold">B. & A. Associates</div>
-        <ul class="flex space-x-9 text-center text-xl font-bold">
+      <a href="index.html">
+        <div class="text-2xl md:text-4xl p-4 font-bold">
+          B. & A. Associates
+        </div></a
+      >
+
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex space-x-8 text-xl font-bold">
+        <li><a href="index.html" class="hover:text-red-900">Home</a></li>
+        <li><a href="about.html" class="hover:text-red-900">About Us</a></li>
+        <li><a href="blog.html" class="hover:text-red-900">Blog</a></li>
+        <li><a href="contact.html" class="hover:text-red-900">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger Menu for Small Screens -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg
+          class="w-8 h-8 text-gray-800"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Pop-up Menu -->
+    <div
+      id="mobile-menu"
+      class="fixed z-20 inset-0 bg-[#094e60]/90 flex justify-center hidden"
+    >
+      <div class="bg-white p-6 my-16 w-4/5">
+        <button
+          id="close-menu"
+          class="absolute top-4 right-4 text-white text-5xl"
+        >
+          &times;
+        </button>
+        <ul class="space-y-6 text-xl font-bold">
           <li>
-            <a href="index.html" class="hover:text-red-900 active:text-red-900"
-              >Home</a
-            >
+            <a href="index.html" class="block hover:text-red-900">Home</a>
           </li>
-          <li><a href="about.html" class="hover:text-red-900">About Us</a></li>
-          <li><a href="blog.html" class="hover:text-red-900">Blog</a></li>
-          <li><a href="contact.html" class="hover:text-red-900">Contact</a></li>
+          <li>
+            <a href="about.html" class="block hover:text-red-900">About Us</a>
+          </li>
+          <li><a href="blog.html" class="block hover:text-red-900">Blog</a></li>
+          <li>
+            <a href="contact.html" class="block hover:text-red-900">Contact</a>
+          </li>
         </ul>
       </div>
-    </nav>
+    </div>
 
     <!-- about us ----------------------------------------------------- -->
     <div
@@ -93,9 +139,9 @@
     >
       <!-- Black Overlay -->
       <div
-        class="absolute inset-0 bg-black bg-opacity-75 flex justify-center items-end"
+        class="absolute inset-0 bg-black bg-opacity-65 flex justify-center items-end"
       >
-        <h2 class="text-5xl lg:text-7xl font-bold mb-14 text-white">
+        <h2 class="text-3xl md:text-5xl lg:text-7xl font-bold mb-14 text-white">
           ABOUT US
         </h2>
       </div>
@@ -106,9 +152,11 @@
       <div class="w-4/5 text-md items-center flex justify-center">
         <div class="rounded-lg">
           <h2 class="text-3xl font-bold text-gray-900 mb-5">
-            Welcome to B. & A. ASSOCIATES
+            B. & A. ASSOCIATES
           </h2>
-          <p class="w-full text-gray-700 text-justify leading-relaxed">
+          <p
+            class="text-sm md:text-md w-full text-gray-700 text-justify leading-relaxed"
+          >
             B. & A. Associates is a chartered accountancy firm registered in
             2017 pursuant to Nepal Chartered Accountants Act, 1997 having
             registration number 707. B. & A. Associates provides Auditing &
@@ -214,111 +262,131 @@
     <section class="py-12 text-md">
       <div class="container mx-auto w-4/5">
         <h2 class="text-3xl font-bold text-gray-900 mb-3">Our Team</h2>
-        <div class="my-10 grid md:grid-cols-3 gap-8">
+        <div class="my-10 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- team member -1 --------------------------------- -->
           <div
-            class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col"
+            class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col justify-between border-b-4 border-[#39AAAA]"
           >
             <img
               src="team.png"
               alt="Blog Image"
-              class="w-full h-auto p-auto object-cover transition duration-300 hover:scale-110"
+              class="w-full h-1/2 p-auto object-cover transition duration-300 hover:scale-110"
             />
-            <div class="p-6 flex-grow">
-              <h3 class="text-xl font-bold text-gray-900">CA. Biraj Acharya</h3>
-              <p class="text-gray-600 text-sm">Partner & Review Partner</p>
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">
+                  CA. Biraj Acharya
+                </h3>
+                <p class="text-gray-600 text-sm">Partner & Review Partner</p>
+              </div>
 
               <p class="text-gray-500 my-4">
                 A Chartered Accountant with 13 years of experience in corporate
                 credit, risk assessment, and financial feasibility analysis.
               </p>
-              <p class="mt-2 text-gray-700">
-                <i class="fas fa-envelope"></i>
-                <a
-                  href="mailto:birajacharya@gmail.com"
-                  class="text-blue-600 hover:underline"
-                >
-                  birajacharya@gmail.com</a
-                >
-              </p>
-              <p class="text-gray-700">
-                <i class="fas fa-phone"></i>
-                <a
-                  href="tel:+9779801912832"
-                  class="text-blue-600 hover:underline"
-                  >+977 9801912832</a
-                >
-              </p>
+              <div>
+                <p class="text-gray-700">
+                  <i class="fas fa-envelope"></i>
+                  <a
+                    href="mailto:birajacharya@gmail.com"
+                    class="text-[#39AAAA] hover:underline"
+                  >
+                    birajacharya@gmail.com</a
+                  >
+                </p>
+                <p class="text-gray-700">
+                  <i class="fas fa-phone"></i>
+                  <a
+                    href="tel:+9779801912832"
+                    class="text-[#39AAAA] hover:underline"
+                    >+977 9801912832</a
+                  >
+                </p>
+              </div>
             </div>
           </div>
           <!-- team member -2 --------------------------------- -->
           <div
-            class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col"
+            class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col border-y-4 border-[#39AAAA]"
           >
             <img
-              src="team.png"
+              src="team1.jpg"
               alt="Blog Image"
-              class="w-full h-auto p-auto object-cover transition duration-300 hover:scale-110"
+              class="w-full h-1/2 p-auto object-cover transition duration-300 hover:scale-110"
             />
-            <div class="p-6 flex-grow">
-              <h3 class="text-xl font-bold text-gray-900">CA. Bibek Panthee</h3>
-              <p class="text-gray-600 text-sm">Partner & Engagement Partner</p>
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">
+                  CA. Bibek Panthee
+                </h3>
+                <p class="text-gray-600 text-sm">
+                  Partner & Engagement Partner
+                </p>
+              </div>
               <p class="text-gray-500 my-4">
                 A Chartered Accountant with 7 years of experience in assurance,
                 risk management, and financial reporting standards convergence.
               </p>
-              <p class="mt-2 text-gray-700">
-                <i class="fas fa-envelope"></i>
-                <a
-                  href="mailto:bibek.panthee@gmail.com"
-                  class="text-blue-600 hover:underline"
-                  >bibek.panthee@gmail.com</a
-                >
-              </p>
-              <p class="text-gray-700">
-                <i class="fas fa-phone"></i>
-                <a
-                  href="tel:+9779817044899"
-                  class="text-blue-600 hover:underline"
-                  >9817044899</a
-                >
-              </p>
+              <div>
+                <p class="mt-2 text-gray-700">
+                  <i class="fas fa-envelope"></i>
+                  <a
+                    href="mailto:bibek.panthee@gmail.com"
+                    class="text-[#39AAAA] hover:underline"
+                    >bibek.panthee@gmail.com</a
+                  >
+                </p>
+                <p class="text-gray-700">
+                  <i class="fas fa-phone"></i>
+                  <a
+                    href="tel:+9779817044899"
+                    class="text-[#39AAAA] hover:underline"
+                    >+977 9817044899</a
+                  >
+                </p>
+              </div>
             </div>
           </div>
           <!-- team member -3 --------------------------------- -->
           <div
-            class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col"
+            class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col border-b-4 border-[#39AAAA]"
           >
             <img
               src="team.png"
               alt="Blog Image"
-              class="w-full h-auto p-auto object-cover transition duration-300 hover:scale-110"
+              class="w-full h-1/2 p-auto object-cover transition duration-300 hover:scale-110"
             />
-            <div class="p-6 flex-grow">
-              <h3 class="text-xl font-bold text-gray-900">CA. Biraj Acharya</h3>
-              <p class="text-gray-600 text-sm">Partner & Review Partner</p>
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">
+                  CA. Biraj Acharya
+                </h3>
+                <p class="text-gray-600 text-sm">Partner & Review Partner</p>
+              </div>
 
               <p class="text-gray-500 my-4">
                 A Chartered Accountant with 13 years of experience in corporate
                 credit, risk assessment, and financial feasibility analysis.
               </p>
-              <p class="mt-2 text-gray-700">
-                <i class="fas fa-envelope"></i>
-                <a
-                  href="mailto:birajacharya@gmail.com"
-                  class="text-blue-600 hover:underline"
-                >
-                  birajacharya@gmail.com</a
-                >
-              </p>
-              <p class="text-gray-700">
-                <i class="fas fa-phone"></i>
-                <a
-                  href="tel:+9779801912832"
-                  class="text-blue-600 hover:underline"
-                  >+977 9801912832</a
-                >
-              </p>
+              <div>
+                <p class="text-gray-700">
+                  <i class="fas fa-envelope"></i>
+                  <a
+                    href="mailto:birajacharya@gmail.com"
+                    class="text-[#39AAAA] hover:underline"
+                  >
+                    birajacharya@gmail.com</a
+                  >
+                </p>
+                <p class="text-gray-700">
+                  <i class="fas fa-phone"></i>
+                  <a
+                    href="tel:+9779801912832"
+                    class="text-[#39AAAA] hover:underline"
+                    >+977 9801912832</a
+                  >
+                </p>
+              </div>
             </div>
           </div>
         </div>

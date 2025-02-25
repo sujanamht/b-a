@@ -69,23 +69,65 @@
     </div>
 
     <!-- Navbar -------------------------------------------------- -->
+    <!-- Navbar -->
     <nav
-      class="relative text-gray-700 shadow-md p-2 flex justify-between items-center"
+      class="relative text-gray-700 shadow-md p-4 flex justify-between items-center bg-white"
     >
-      <div class="relative z-10 flex justify-between w-full p-4">
-        <div class="text-4xl font-bold">B. & A. Associates</div>
-        <ul class="flex space-x-9 text-center text-xl font-bold">
+    <a  href="index.html"> <div class="text-2xl md:text-4xl p-4 font-bold"> B. & A. Associates </div></a>
+
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex space-x-8 text-xl font-bold">
+        <li><a href="index.html" class="hover:text-red-900">Home</a></li>
+        <li><a href="about.html" class="hover:text-red-900">About Us</a></li>
+        <li><a href="blog.html" class="hover:text-red-900">Blog</a></li>
+        <li><a href="contact.html" class="hover:text-red-900">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger Menu for Small Screens -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg
+          class="w-8 h-8 text-gray-800"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Pop-up Menu -->
+    <div
+      id="mobile-menu"
+      class="fixed z-20 inset-0 bg-[#094e60]/90 flex justify-center hidden"
+    >
+      <div class="bg-white p-6 my-16 w-4/5">
+        <button
+          id="close-menu"
+          class="absolute top-4 right-4 text-white text-5xl"
+        >
+          &times;
+        </button>
+        <ul class="space-y-6 text-xl font-bold">
           <li>
-            <a href="index.html" class="hover:text-red-900 active:text-red-900"
-              >Home</a
-            >
+            <a href="index.html" class="block hover:text-red-900">Home</a>
           </li>
-          <li><a href="about.html" class="hover:text-red-900">About Us</a></li>
-          <li><a href="blog.html" class="hover:text-red-900">Blog</a></li>
-          <li><a href="contact.html" class="hover:text-red-900">Contact</a></li>
+          <li>
+            <a href="about.html" class="block hover:text-red-900">About Us</a>
+          </li>
+          <li><a href="blog.html" class="block hover:text-red-900">Blog</a></li>
+          <li>
+            <a href="contact.html" class="block hover:text-red-900">Contact</a>
+          </li>
         </ul>
       </div>
-    </nav>
+    </div>
 
     <!-- blog detail page ----------------------------------------------------- -->
     <div
@@ -99,7 +141,7 @@
         class="absolute inset-0 bg-black bg-opacity-75 flex justify-center items-end"
       >
       
-        <h2 class="text-2xl lg:text-5xl font-bold mb-14 text-white text-center">
+        <h2 class="text-xl md:text-3xl lg:text-5xl font-bold mb-14 text-white text-center">
             The Rise of B. & A. Associates – A Trusted Chartered
             Accountancy Firm in Nepal
         </h2>

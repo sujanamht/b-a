@@ -18,7 +18,7 @@
         font-size: 22px;
       }
     </style>
-    <title>Zeba - Contact Us</title>
+    <title>B. & A. Associates</title>
   </head>
   <body>
     <div
@@ -63,23 +63,69 @@
     </div>
 
     <!-- Navbar -------------------------------------------------- -->
+    <!-- Navbar -->
     <nav
-      class="relative text-gray-700 shadow-md p-2 flex justify-between items-center"
+      class="relative text-gray-700 shadow-md p-4 flex justify-between items-center bg-white"
     >
-      <div class="relative z-10 flex justify-between w-full p-4">
-        <div class="text-4xl font-bold">B. & A. Associates</div>
-        <ul class="flex space-x-9 text-center text-xl font-bold">
+      <a href="index.html">
+        <div class="text-2xl md:text-4xl p-4 font-bold">
+          B. & A. Associates
+        </div></a
+      >
+
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex space-x-8 text-xl font-bold">
+        <li><a href="index.html" class="hover:text-red-900">Home</a></li>
+        <li><a href="about.html" class="hover:text-red-900">About Us</a></li>
+        <li><a href="blog.html" class="hover:text-red-900">Blog</a></li>
+        <li><a href="contact.html" class="hover:text-red-900">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger Menu for Small Screens -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg
+          class="w-8 h-8 text-gray-800"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Pop-up Menu -->
+    <div
+      id="mobile-menu"
+      class="fixed z-20 inset-0 bg-[#094e60]/90 flex justify-center hidden"
+    >
+      <div class="bg-white p-6 my-16 w-4/5">
+        <button
+          id="close-menu"
+          class="absolute top-4 right-4 text-white text-5xl"
+        >
+          &times;
+        </button>
+        <ul class="space-y-6 text-xl font-bold">
           <li>
-            <a href="index.html" class="hover:text-red-900 active:text-red-900"
-              >Home</a
-            >
+            <a href="index.html" class="block hover:text-red-900">Home</a>
           </li>
-          <li><a href="about.html" class="hover:text-red-900">About Us</a></li>
-          <li><a href="#" class="hover:text-red-900">Blog</a></li>
-          <li><a href="#" class="hover:text-red-900">Contact</a></li>
+          <li>
+            <a href="about.html" class="block hover:text-red-900">About Us</a>
+          </li>
+          <li><a href="blog.html" class="block hover:text-red-900">Blog</a></li>
+          <li>
+            <a href="contact.html" class="block hover:text-red-900">Contact</a>
+          </li>
         </ul>
       </div>
-    </nav>
+    </div>
     <!-- contact ------------------------------------------------------- -->
     <div class="relative text-white mx-auto">
       <div
@@ -89,7 +135,9 @@
         <div
           class="absolute inset-0 bg-black bg-opacity-75 flex justify-center items-end"
         >
-          <h2 class="text-5xl lg:text-7xl font-bold mb-14">CONTACT US</h2>
+          <h2 class="text-3xl md:text-5xl lg:text-7xl font-bold mb-14">
+            CONTACT US
+          </h2>
         </div>
       </div>
     </div>
@@ -101,15 +149,15 @@
         <div
           class="border border-gray-300 h-30 p-4 text-center bg-white rounded shadow"
         >
-          <a
-            href="https://www.google.com/maps?ll=42.966304,-71.451938&z=16&t=m&hl=en&gl=US&mapclient=embed&q=379+S+Willow+St+Manchester,+NH+03103"
-          >
+          <a href="https://maps.app.goo.gl/8iK8AHC5xGPrS1378">
             <i class="fas fa-map-marker-alt text-3xl p-2"></i>
             <h3 class="font-semibold p-1">Our Address</h3>
             <text>Devkota Sadak, Mid Baneshwor, Kathmandu</text></a
           >
         </div>
-        <div class="flex space-x-4">
+        <div
+          class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4"
+        >
           <div
             class="border border-gray-300 h-30 p-4 w-full text-center bg-white rounded shadow"
           >

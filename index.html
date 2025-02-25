@@ -11,10 +11,15 @@
       rel="stylesheet"
     />
     <!-- Swiper CSS -->
+    <!-- Swiper CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <style>
       * {
         font-family: "Inter Tight", sans-serif;
@@ -71,63 +76,127 @@
     </div>
 
     <!-- Navbar -------------------------------------------------- -->
+    <!-- Navbar -->
     <nav
-      class="relative text-gray-700 shadow-md p-2 flex justify-between items-center"
+      class="relative text-gray-700 shadow-md p-4 flex justify-between items-center bg-white"
     >
-      <div class="relative z-10 flex justify-between w-full p-4">
-        <div class="text-4xl font-bold">B. & A. Associates</div>
-        <ul class="flex space-x-9 text-center text-xl font-bold">
+      <a href="index.html">
+        <div class="text-2xl md:text-4xl p-4 font-bold">
+          B. & A. Associates
+        </div></a
+      >
+
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex space-x-8 text-xl font-bold">
+        <li><a href="index.html" class="hover:text-red-900">Home</a></li>
+        <li><a href="about.html" class="hover:text-red-900">About Us</a></li>
+        <li><a href="blog.html" class="hover:text-red-900">Blog</a></li>
+        <li><a href="contact.html" class="hover:text-red-900">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger Menu for Small Screens -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg
+          class="w-8 h-8 text-gray-800"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Pop-up Menu -->
+    <div
+      id="mobile-menu"
+      class="fixed z-20 inset-0 bg-[#094e60]/90 flex justify-center hidden"
+    >
+      <div class="bg-white p-6 my-16 w-4/5">
+        <button
+          id="close-menu"
+          class="absolute top-4 right-4 text-white text-5xl"
+        >
+          &times;
+        </button>
+        <ul class="space-y-6 text-xl font-bold">
           <li>
-            <a href="index.html" class="hover:text-red-900 active:text-red-900"
-              >Home</a
-            >
+            <a href="index.html" class="block hover:text-red-900">Home</a>
           </li>
-          <li><a href="about.html" class="hover:text-red-900">About Us</a></li>
-          <li><a href="blog.html" class="hover:text-red-900">Blog</a></li>
-          <li><a href="contact.html" class="hover:text-red-900">Contact</a></li>
+          <li>
+            <a href="about.html" class="block hover:text-red-900">About Us</a>
+          </li>
+          <li><a href="blog.html" class="block hover:text-red-900">Blog</a></li>
+          <li>
+            <a href="contact.html" class="block hover:text-red-900">Contact</a>
+          </li>
         </ul>
       </div>
-    </nav>
+    </div>
 
     <!-- Hero Section -------------------------------------------------- -->
     <section id="hero" class="relative w-full h-[600px] overflow-hidden">
-      <div class="relative w-full h-full">
+      <div class="relative w-full h-full flex">
+        <!-- Slide Wrapper -->
         <div
-          class="absolute inset-0 flex items-center justify-center bg-cover bg-center transition-opacity duration-1000 opacity-100"
-          style="background-image: url('slider1.jpg')"
-          id="slide1"
+          class="w-full h-full flex transition-transform duration-1000"
+          id="slider"
         >
-          <div class="text-center text-white px-6 space-y-8">
-            <h2 class="text-5xl text-[#094e60] font-bold">
-              B. & A. Associates
-            </h2>
-            <p class="mt-4 text-xl">
-              B. & A. Associates provides innovative financial solutions with
-              expertise in auditing, taxation, and advisory services...
-            </p>
-            <a
-              href="about.html"
-              class="mt-6 inline-block bg-[#094e60] text-white px-6 py-2 rounded hover:bg-cyan-500"
-              >Read More</a
-            >
+          <!-- Slide 1 -->
+          <div
+            class="slide w-full h-full flex-shrink-0 bg-cover bg-center flex items-center justify-center"
+            style="background-image: url('slider2.png')"
+          >
+            <div class="text-center text-white px-6 space-y-8 relative z-10">
+              <h2 class="text-3xl md:text-5xl text-white font-bold">
+                B. & A. Associates
+              </h2>
+              <p class="mt-4 text:lg md:text-xl">
+                B. & A. Associates provides innovative financial solutions with
+                expertise in auditing, taxation, and advisory services...
+              </p>
+              <a
+                href="about.html"
+                class="mt-6 inline-block bg-[#094e60] text-white px-6 py-2 rounded hover:bg-cyan-500"
+              >
+                Read More
+              </a>
+            </div>
+            <!-- Black Overlay -->
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
           </div>
-        </div>
-        <div
-          class="absolute inset-0 flex items-center justify-center bg-cover bg-center transition-opacity duration-1000 opacity-0"
-          style="background-image: url('slider2.png')"
-          id="slide2"
-        >
-          <div class="text-center text-white px-6">
-            <h2 class="text-4xl font-bold">Slide 2 Title</h2>
-            <p class="mt-4 text-lg">
-              B. & A. Associates provides innovative financial solutions with
-              expertise in auditing, taxation, and advisory services...
-            </p>
-            <a
-              href="#about"
-              class="mt-6 inline-block bg-blue-500 text-white px-6 py-2 rounded hover:bg-cyan-500"
-              >Read More</a
-            >
+
+          <!-- Slide 2 -->
+          <div
+            class="slide w-full h-full flex-shrink-0 bg-cover bg-center flex items-center justify-center"
+            style="background-image: url('slider1.jpg')"
+          >
+            <!-- Black Overlay -->
+            <!-- <div
+             class="absolute inset-0 bg-black bg-opacity-50 "
+           ></div> -->
+
+            <div class="text-center text-white px-6 space-y-8 relative z-10">
+              <h2 class="text-3xl md:text-5xl text-white font-bold">
+                B. & A. Associates
+              </h2>
+              <p class="mt-4 text:lg md:text-xl">
+                B. & A. Associates provides innovative financial solutions with
+                expertise in auditing, taxation, and advisory services...
+              </p>
+              <a
+                href="about.html"
+                class="mt-6 inline-block bg-[#094e60] text-white px-6 py-2 rounded hover:bg-cyan-500"
+              >
+                Read More
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -135,30 +204,33 @@
       <!-- Navigation Controls -->
       <button
         id="prevSlide"
-        class="absolute left-4 top-1/2 transform -translate-y-1/2 hover:bg-gray-800 hover:text-white p-2 rounded-full"
+        class="absolute left-4 top-1/2 transform -translate-y-1/2 hover:bg-gray-800 text-white p-2 rounded-full"
       >
         ❮
       </button>
       <button
         id="nextSlide"
-        class="absolute right-4 top-1/2 transform -translate-y-1/2 hover:bg-gray-800 hover:text-white p-2 rounded-full"
+        class="absolute right-4 top-1/2 transform -translate-y-1/2 hover:bg-gray-800 text-white p-2 rounded-full"
       >
         ❯
       </button>
     </section>
 
     <!-- About us -------------------------------------------------- -->
+
     <section
-      class="mx-44 grid md:grid-cols-2 gap-4 flex items-center justify-center"
+      class="md:mx-32 m-10 grid lg:grid-cols-2 gap-4 flex items-center justify-center"
     >
       <div
-        class="w-full h-[300px] bg-no-repeat"
+        class="h-[200px] md:h-[300px] bg-no-repeat"
         style="background-image: url('about.jpg')"
       ></div>
-      <div class="w-auto h-[500px] p-4 flex items-center justify-center">
-        <div class="p-4 bg-white w-full mt-4 shadow-lg">
-          <h2 class="text-3xl font-bold">About B. & A. Associates</h2>
-          <p class="mt-4 text-md">
+      <div class="w-auto h-auto flex md:items-center justify-center">
+        <div class="p-2 md:p-4 bg-white w-full shadow-lg">
+          <h2 class="text-2xl md:text-3xl font-bold">
+            About B. & A. Associates
+          </h2>
+          <p class="mt-2 md:mt-4 text-md text-justify">
             B. & A. Associates provides innovative financial solutions with
             expertise in auditing, taxation, and advisory services... it
             provides innovative financial solutions with expertise in auditing,
@@ -168,7 +240,7 @@
             with expertise in auditing, taxation, and advisory services...
           </p>
           <button
-            class="my-4 bg-zinc-500 text-white px-4 py-2 rounded hover:bg-cyan-500"
+            class="my-4 bg-zinc-500 text-white px-4 py-2 rounded hover:bg-[#094e60]"
           >
             Read More
           </button>
@@ -182,7 +254,7 @@
         Our Services
       </h2>
 
-      <div class="mx-20 mt-8 grid md:grid-cols-4 gap-8">
+      <div class="mx-10 md:mx-20 mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Auditing and Assurance (Updated) -->
         <div
           class="bg-[#1191b1]/10 rounded-xl shadow-xl flex flex-col justify-center border-b-4 border-cyan-500 hover:scale-105 transition duration-300"
@@ -340,7 +412,9 @@
     <!-- Industries we serve -------------------------------------------------- -->
     <div class="my-20 bg-white text-black">
       <h2 class="text-4xl font-bold text-center">Industries We Serve</h2>
-      <div class="m-20 px-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div
+        class="m-6 md:m-20 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+      >
         <!-- Left Column -->
         <div class="space-y-6">
           <div
@@ -466,13 +540,13 @@
               <img src="logo/sarovar.png" class="h-32 mx-auto" />
             </div>
             <div class="swiper-slide">
-              <img src="logo/ramada.png" class="h-32 mx-auto" />
+              <img src="logo/abinfra.png" class="h-32 mx-auto" />
             </div>
             <div class="swiper-slide">
-              <img src="logo/bigdaddy.png" class="h-32 mx-auto" />
+              <img src="logo/dhi.png" class="h-32 mx-auto" />
             </div>
             <div class="swiper-slide">
-              <img src="logo/sarovar.png" class="h-32 mx-auto" />
+              <img src="logo/ewc.png" class="h-32 mx-auto" />
             </div>
           </div>
         </div>
@@ -490,19 +564,21 @@
         <!-- Company Info -->
         <div>
           <h2 class="text-xl font-bold">B. & A. ASSOCIATES</h2>
-          <p class="mt-4 text-sm text-stone-300">
-            <i class="fa-solid fa-location-dot p-1"></i> Devkota Sadak, Mid
-            Baneshwor, Kathmandu, Nepal
+          <p class="mt-4 text-sm text-stone-300 hover:text-white">
+            <a href="https://maps.app.goo.gl/8iK8AHC5xGPrS1378" target="_blank">
+              <i class="fa-solid fa-location-dot p-1"></i> Devkota Sadak, Mid
+              Baneshwor, Kathmandu
+            </a>
           </p>
-          <p class="mt-1 text-sm text-stone-300">
-            <i class="fas fa-phone p-1"></i> +977 9801912832
+
+          <p class="mt-1 text-sm text-stone-300 hover:text-white">
+            <a href="tel:9801912832">
+              <i class="fas fa-phone p-1"></i> +977 9801912832</a
+            >
           </p>
-          <p class="mt-1 text-sm text-stone-300">
-            <i class="fas fa-envelope p-1"></i>
-            <a
-              href="mailto:birajacharya@gmail.com"
-              class="underline hover:text-gray-300"
-              >birajacharya@gmail.com</a
+          <p class="mt-1 text-sm text-stone-300 hover:text-white">
+            <a href="mailto:birajacharya@gmail.com">
+              <i class="fas fa-envelope p-1"></i> birajacharya@gmail.com</a
             >
           </p>
           <div class="flex space-x-4 mt-4">
@@ -523,22 +599,22 @@
           <h2 class="text-lg font-bold">Our Services</h2>
           <ul class="mt-3 space-y-3 text-stone-300">
             <li>
-              <a href="#" class="hover:text-gray-50"
+              <a href="#services" class="hover:text-gray-50"
                 >› Auditing and Assurance</a
               >
             </li>
             <li>
-              <a href="#" class="hover:text-gray-50"
+              <a href="#services" class="hover:text-gray-50"
                 >› Internal Audit and Risk Advisory</a
               >
             </li>
             <li>
-              <a href="#" class="hover:text-gray-50"
+              <a href="#services" class="hover:text-gray-50"
                 >› Tax Audit and Taxation Advisory</a
               >
             </li>
             <li>
-              <a href="#" class="hover:text-gray-50"
+              <a href="#services" class="hover:text-gray-50"
                 >› Business Advisory & Accountancy</a
               >
             </li>
@@ -546,14 +622,14 @@
         </div>
 
         <!-- map Embed -->
-        <div>
+        <div class=" ">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.7196065433304!2d85.33472217471571!3d27.695059826034573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1999c4639299%3A0xc89109abaeb744f3!2sDevkota%20Sadak%2C%20Kathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2sus!4v1740083908773!5m2!1sen!2sus"
-            width="400"
+            width="100% "
             height="250"
             style="border: 0"
             allowfullscreen=""
-            loading="lazy"
+            loading=""
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
@@ -566,28 +642,77 @@
       © Copyright <span class="font-bold">B. & A. Associates</span>. All Rights
       Reserved <br /><span class="text-stone-00">
         Designed & Developed by
-        <span class="font-bold">IT Nepal Solutions</span></span
+        <span class="font-bold">Orphic Technologies</span></span
       >
     </div>
 
-    <!-- for sliders -------------------------------------------------- -->
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
-        spaceBetween: 20,
-        loop: true, // Enable Loop
-        autoplay: { delay: 10000 },
-        pagination: { el: ".swiper-pagination", clickable: true }, // Dots Enabled
-        loopFillGroupWithBlank: false, // Prevents empty spaces
-        breakpoints: {
-          320: { slidesPerView: 2 },
-          640: { slidesPerView: 3 },
-          1024: { slidesPerView: 4 },
-        },
+      // clients logo -----------------------------------------------------
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 4,
+          spaceBetween: 20,
+          loop: true,
+          autoplay: { delay: 3000 }, // Faster autoplay for testing
+          pagination: { el: ".swiper-pagination", clickable: true },
+          breakpoints: {
+            320: { slidesPerView: 2, spaceBetween: 10 },
+            640: { slidesPerView: 3, spaceBetween: 15 },
+            1024: { slidesPerView: 4, spaceBetween: 20 },
+          },
+        });
       });
+      // navbar -------------------------------------
+      const menuBtn = document.getElementById("menu-btn");
+      const closeMenu = document.getElementById("close-menu");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("hidden");
+      });
+
+      closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+
+      // sliders ----------------------------------------------------
+      let currentIndex = 0;
+      const slides = document.querySelectorAll(".slide");
+      const overlays = document.querySelectorAll(".overlay");
+      const slider = document.getElementById("slider");
+      const totalSlides = slides.length;
+
+      function updateSlidePosition() {
+        // Move slides horizontally
+        slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        // Reset all overlays
+        overlays.forEach((overlay) => overlay.classList.add("bg-opacity-0"));
+        overlays[currentIndex].classList.remove("bg-opacity-0");
+        overlays[currentIndex].classList.add("bg-opacity-50");
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlidePosition();
+      }
+
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateSlidePosition();
+      }
+
+      document.getElementById("nextSlide").addEventListener("click", nextSlide);
+      document.getElementById("prevSlide").addEventListener("click", prevSlide);
+
+      // Auto Slide Every 5 Seconds
+      setInterval(nextSlide, 5000);
+
+      // Initialize first slide with proper overlay
+      updateSlidePosition();
+
+      // our services  pop-up ----------------------------------------------
       function openModal() {
         document.getElementById("serviceModal").classList.remove("hidden");
       }
