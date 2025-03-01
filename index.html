@@ -16,60 +16,53 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <style>
       * {
-        font-family: "Inter Tight", sans-serif;
-        font-optical-sizing: auto;
-        font-style: normal;
+        font-family: "Outfit", sans-serif;
       }
-      h2 {
-        font-family: "Content";
-        font-size: 22px;
+      p {
+        color: #575757;
       }
     </style>
   </head>
   <body>
     <!-- Top Bar -->
     <div
-      class="bg-[#094e60]/85 text-white text-sm py-2 px-4 flex justify-center md:justify-between"
+      class="bg-[#2175bb] text-white text-xs p-2 flex justify-center space-x-4 md:justify-between"
     >
-      <div>
-        <a
-          href="https://maps.app.goo.gl/8iK8AHC5xGPrS1378"
-          target="_blank"
-          class="p-2 hover:bg-white rounded hover:text-green-700"
-          ><i class="fa-solid fa-location-dot"></i>
-          <span class="hidden md:inline">
-            Devkota Sadak, Mid Baneshwor, Kathmandu</span
-          >
-        </a>
-        <a
-          href="mailto:birajacharya@gmail.com"
-          class="ml-4 p-2 hover:bg-white rounded hover:text-blue-700"
+      <div class="space-x-4 md:ml-6">
+        <a href="mailto:birajacharya@gmail.com" class="  "
           ><i class="fas fa-envelope"></i>
           <span class="hidden md:inline"> birajacharya@gmail.com</span></a
         >
-        <a
-          href="tel:9801912832"
-          class="ml-4 p-2 hover:bg-white rounded hover:text-red-700"
+        <a href="tel:9801912832" class="  "
           ><i class="fas fa-phone"></i>
           <span class="hidden md:inline"> +977 9801912832</span></a
         >
+        <a
+          href="https://maps.app.goo.gl/rNTfGY7q6R374qHz5"
+          target="_blank"
+          class=" "
+          ><i class="fa-solid fa-location-dot"></i>
+          <span class="hidden md:inline"> Mid Baneshwor, Kathmandu</span>
+        </a>
       </div>
-      <div>
+      <div class="space-x-4 md:mr-6">
         <a
           href="https://www.facebook.com/"
-          class="p-2 rounded text-white hover:bg-white hover:text-blue-700"
+          class="rounded text-white hover:text-blue-400"
         >
           <i class="fab fa-facebook fa-lg"></i>
         </a>
-        <a
-          href="#"
-          class="p-2 rounded text-white hover:bg-white hover:text-blue-700"
+        <a href="#" class="rounded text-white hover:text-blue-400"
           ><i class="fab fa-linkedin fa-lg"></i
         ></a>
       </div>
@@ -78,20 +71,20 @@
     <!-- Navbar -------------------------------------------------- -->
     <!-- Navbar -->
     <nav
-      class="relative text-gray-700 shadow-md p-4 flex justify-between items-center bg-white"
+      class="relative text-gray-700 shadow-md p-3 flex justify-between items-center bg-white"
     >
       <a href="index.html">
-        <div class="text-2xl md:text-4xl p-4 font-bold">
-          B. & A. Associates
+        <div class="text-xl md:text-3xl p-4 font-semibold hover:text-[#e80566]">
+          <h2>B. & A. Associates</h2>
         </div></a
       >
 
       <!-- Desktop Navigation -->
-      <ul class="hidden md:flex space-x-8 text-xl font-bold">
-        <li><a href="index.html" class="hover:text-red-900">Home</a></li>
-        <li><a href="about.html" class="hover:text-red-900">About Us</a></li>
-        <li><a href="blog.html" class="hover:text-red-900">Blog</a></li>
-        <li><a href="contact.html" class="hover:text-red-900">Contact</a></li>
+      <ul class="hidden md:flex space-x-8 text-xl">
+        <li><a href="index.html" class="hover:text-[#e80566]">Home</a></li>
+        <li><a href="about.html" class="hover:text-[#e80566]">About Us</a></li>
+        <li><a href="blog.html" class="hover:text-[#e80566]">Blog</a></li>
+        <li><a href="contact.html" class="hover:text-[#e80566]">Contact</a></li>
       </ul>
 
       <!-- Hamburger Menu for Small Screens -->
@@ -116,7 +109,7 @@
     <!-- Mobile Pop-up Menu -->
     <div
       id="mobile-menu"
-      class="fixed z-20 inset-0 bg-[#094e60]/90 flex justify-center hidden"
+      class="fixed z-20 inset-0 bg-[#2175bb] flex justify-center hidden"
     >
       <div class="bg-white p-6 my-16 w-4/5">
         <button
@@ -127,14 +120,18 @@
         </button>
         <ul class="space-y-6 text-xl font-bold">
           <li>
-            <a href="index.html" class="block hover:text-red-900">Home</a>
+            <a href="index.html" class="block hover:text-[#e80566]">Home</a>
           </li>
           <li>
-            <a href="about.html" class="block hover:text-red-900">About Us</a>
+            <a href="about.html" class="block hover:text-[#e80566]">About Us</a>
           </li>
-          <li><a href="blog.html" class="block hover:text-red-900">Blog</a></li>
           <li>
-            <a href="contact.html" class="block hover:text-red-900">Contact</a>
+            <a href="blog.html" class="block hover:text-[#e80566]">Blog</a>
+          </li>
+          <li>
+            <a href="contact.html" class="block hover:text-[#e80566]"
+              >Contact</a
+            >
           </li>
         </ul>
       </div>
@@ -157,13 +154,13 @@
               <h2 class="text-3xl md:text-5xl text-white font-bold">
                 B. & A. Associates
               </h2>
-              <p class="mt-4 text:lg md:text-xl">
+              <p class="mt-4 text-white text:lg md:text-xl">
                 B. & A. Associates provides innovative financial solutions with
                 expertise in auditing, taxation, and advisory services...
               </p>
               <a
                 href="about.html"
-                class="mt-6 inline-block bg-[#094e60] text-white px-6 py-2 rounded hover:bg-cyan-500"
+                class="mt-6 inline-block bg-[#2175bb] text-white px-6 py-2 rounded hover:bg-[#e80566]"
               >
                 Read More
               </a>
@@ -183,16 +180,14 @@
            ></div> -->
 
             <div class="text-center text-white px-6 space-y-8 relative z-10">
-              <h2 class="text-3xl md:text-5xl text-white font-bold">
-                B. & A. Associates
-              </h2>
-              <p class="mt-4 text:lg md:text-xl">
+              <h2 class="text-3xl md:text-5xl font-bold">B. & A. Associates</h2>
+              <p class="mt-4 text-white text:lg md:text-xl">
                 B. & A. Associates provides innovative financial solutions with
                 expertise in auditing, taxation, and advisory services...
               </p>
               <a
                 href="about.html"
-                class="mt-6 inline-block bg-[#094e60] text-white px-6 py-2 rounded hover:bg-cyan-500"
+                class="mt-6 inline-block bg-[#2175bb] text-white px-6 py-2 rounded hover:bg-[#e80566]"
               >
                 Read More
               </a>
@@ -204,13 +199,13 @@
       <!-- Navigation Controls -->
       <button
         id="prevSlide"
-        class="absolute left-4 top-1/2 transform -translate-y-1/2 hover:bg-gray-800 text-white p-2 rounded-full"
+        class="absolute left-4 top-1/2 transform -translate-y-1/2 hover:bg-gray-800 text-white p-2 rounded-lg"
       >
         ❮
       </button>
       <button
         id="nextSlide"
-        class="absolute right-4 top-1/2 transform -translate-y-1/2 hover:bg-gray-800 text-white p-2 rounded-full"
+        class="absolute right-4 top-1/2 transform -translate-y-1/2 hover:bg-gray-800 text-white p-2 rounded-lg"
       >
         ❯
       </button>
@@ -219,16 +214,16 @@
     <!-- About us -------------------------------------------------- -->
 
     <section
-      class="md:mx-32 m-10 grid lg:grid-cols-2 gap-4 flex items-center justify-center"
+      class="md:mx-28 m-10 grid lg:grid-cols-2 gap-4 flex items-center justify-center"
     >
       <div
         class="h-[200px] md:h-[300px] bg-no-repeat"
         style="background-image: url('about.jpg')"
       ></div>
       <div class="w-auto h-auto flex md:items-center justify-center">
-        <div class="p-2 md:p-4 bg-white w-full shadow-lg">
-          <h2 class="text-2xl md:text-3xl font-bold">
-            About B. & A. Associates
+        <div class="md:p-2 bg-white w-full">
+          <h2 class="text-2xl md:text-3xl font-bold hover:text-[#e80566]">
+            ABOUT B. & A. ASSOCIATES
           </h2>
           <p class="mt-2 md:mt-4 text-md text-justify">
             B. & A. Associates provides innovative financial solutions with
@@ -240,7 +235,7 @@
             with expertise in auditing, taxation, and advisory services...
           </p>
           <button
-            class="my-4 bg-zinc-500 text-white px-4 py-2 rounded hover:bg-[#094e60]"
+            class="my-4 text-white px-4 py-2 bg-[#2175bb] rounded hover:bg-[#e80566]"
           >
             Read More
           </button>
@@ -250,25 +245,21 @@
 
     <!-- Our services   -------------------------------------------------- -->
     <div id="services" class="    ">
-      <h2 class="text-4xl text-center font-bold bg-[#1191b1]/10 py-8">
+      <h2 class="text-4xl font-bold text-center bg-[#2175bb]/5 p-8 my-8">
         Our Services
       </h2>
 
-      <div class="mx-10 md:mx-20 mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="mx-10 md:mx-28 mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Auditing and Assurance (Updated) -->
         <div
-          class="bg-[#1191b1]/10 rounded-xl shadow-xl flex flex-col justify-center border-b-4 border-cyan-500 hover:scale-105 transition duration-300"
+          class="bg-[#2175bb]/10 rounded-xl shadow-xl flex flex-col justify-center border-b-4 border-[#2175bb] hover:scale-105 transition duration-300"
         >
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
-            class="w-sm h-auto p-6"
-            alt="Audit Icon"
-          />
+          <img src="./icon/list.png" class="p-16" alt="Audit Icon" />
           <h3 class="text-xl text-center font-semibold text-gray-700">
             Auditing and Assurance Service
           </h3>
           <button
-            class="m-8 bg-zinc-500 text-white py-2 px-4 rounded hover:bg-cyan-500"
+            class="m-8 bg-zinc-500 text-white py-2 px-4 rounded hover:bg-[#2175bb]"
             onclick="openModal()"
           >
             MORE
@@ -284,7 +275,7 @@
             class="bg-white p-6 rounded-lg shadow-lg w-[450px] sm:w-[550px] relative scale-95 transition-all duration-300"
           >
             <button
-              class="absolute top-4 right-4 text-gray-700 hover:text-red-600 text-3xl font-bold"
+              class="absolute top-4 right-4 text-gray-700 hover:text-[#e80566] text-3xl font-bold"
               onclick="closeModal()"
             >
               &times;
@@ -302,7 +293,7 @@
               <li>Cost Audit</li>
             </ul>
             <button
-              class="my-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700"
+              class="my-4 w-full text-white py-2 rounded bg-[#e80566]"
               onclick="closeModal()"
             >
               Close
@@ -311,20 +302,16 @@
         </div>
         <!-- Internal Audit and Risk Advisory -->
         <div
-          class="bg-[#1191b1]/10 rounded-xl shadow-xl flex flex-col justify-center border-b-4 border-cyan-500 hover:scale-105 transition duration-300"
+          class="bg-[#2175bb]/10 rounded-xl shadow-xl flex flex-col justify-center border-b-4 border-[#2175bb] hover:scale-105 transition duration-300"
         >
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
-            class="w-sm h-auto p-6"
-            alt="Audit Icon"
-          />
+          <img src="./icon/research.png" class="p-16" alt="" />
           <h3
             class="text-xl text-center font-semibold text-gray-700 items-center gap-2"
           >
             Internal Audit and Risk Advisory
           </h3>
           <button
-            class="m-8 bg-zinc-500 text-white py-2 rounded hover:bg-cyan-500"
+            class="m-8 bg-zinc-500 text-white py-2 rounded hover:bg-[#2175bb]"
           >
             MORE
           </button>
@@ -341,20 +328,16 @@
         </div>
         <!-- Tax Audit and Taxation Advisory -->
         <div
-          class="bg-[#1191b1]/10 rounded-xl shadow-xl flex flex-col justify-center border-b-4 border-cyan-500 hover:scale-105 transition duration-300"
+          class="bg-[#2175bb]/10 rounded-xl shadow-xl flex flex-col justify-center border-b-4 border-[#2175bb] hover:scale-105 transition duration-300"
         >
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
-            class="w-sm h-auto p-6"
-            alt="Audit Icon"
-          />
+          <img src="./icon//tax-form.png" class="p-16" alt="Audit Icon" />
           <h3
             class="text-xl text-center font-semibold text-gray-700 items-center gap-2"
           >
             Tax Audit and Taxation Advisory
           </h3>
           <button
-            class="m-8 bg-zinc-500 text-white py-2 rounded hover:bg-cyan-500"
+            class="m-8 bg-zinc-500 text-white py-2 rounded hover:bg-[#2175bb]"
           >
             MORE
           </button>
@@ -372,20 +355,16 @@
 
         <!-- Business Advisory & Accountancy -->
         <div
-          class="bg-[#1191b1]/10 rounded-xl shadow-xl flex flex-col justify-center border-b-4 border-cyan-500 hover:scale-105 transition duration-300"
+          class="bg-[#2175bb]/10 rounded-xl shadow-xl flex flex-col justify-center border-b-4 border-[#2175bb] hover:scale-105 transition duration-300"
         >
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
-            class="w-sm h-auto p-6"
-            alt="Audit Icon"
-          />
+          <img src="./icon/conversation.png" class="p-16" alt="Audit Icon" />
           <h3
             class="text-xl text-center font-semibold text-gray-700 items-center gap-2"
           >
             Business Advisory & Accountancy
           </h3>
           <button
-            class="m-8 bg-zinc-500 text-white py-2 rounded hover:bg-cyan-500"
+            class="m-8 bg-zinc-500 text-white py-2 rounded hover:bg-[#2175bb]"
           >
             MORE
           </button>
@@ -411,25 +390,18 @@
 
     <!-- Industries we serve -------------------------------------------------- -->
     <div class="my-20 bg-white text-black">
-      <h2 class="text-4xl font-bold text-center">Industries We Serve</h2>
+      <h2 class="text-4xl font-bold text-center bg-[#2175bb]/5 p-8 my-8">
+        Industries We Serve
+      </h2>
       <div
-        class="m-6 md:m-20 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+        class="m-6 md:mx-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"
       >
         <!-- Left Column -->
-        <div class="space-y-6">
+        <div class="space-y-3">
           <div
-            class="flex flex-row items-center space-x-6 hover:bg-[#F8F8FF] p-2 rounded-3xl"
+            class="flex items-center space-x-6 hover:text-[#e80566] hover:bg-[#e80566]/10 p-4 rounded-lg bg-[#2175bb]/5"
           >
-            <div class="border-2 rounded-full hover:bg-cyan-500">
-              <i class="fas fa-industry text-4xl p-4"></i>
-            </div>
-            <div>
-              <p class="text-sm">Wine & Beverage Manufacturing Companies</p>
-              <p class="text-sm">Paint Manufacturing Companies</p>
-            </div>
-          </div>
-          <div class="flex items-center space-x-6 bg-[#F8F8FF] p-2 rounded-3xl">
-            <div class="border-2 rounded-full hover:bg-cyan-500">
+            <div class="rounded-full">
               <i class="fas fa-newspaper text-4xl p-4"></i>
             </div>
             <div>
@@ -437,8 +409,10 @@
               <p class="text-sm">Television Media Companies</p>
             </div>
           </div>
-          <div class="flex items-center space-x-5">
-            <div class="border-2 rounded-full hover:bg-cyan-500">
+          <div
+            class="flex items-center space-x-6 hover:text-[#e80566] hover:bg-[#2175bb]/10 p-4 rounded-lg bg-[#2175bb]/5"
+          >
+            <div class="rounded-full">
               <i class="fas fa-graduation-cap text-4xl p-4"></i>
             </div>
             <div>
@@ -446,8 +420,10 @@
               <p class="text-sm">Research Institutions</p>
             </div>
           </div>
-          <div class="flex items-center space-x-5">
-            <div class="border-2 rounded-full hover:bg-cyan-500">
+          <div
+            class="flex items-center space-x-6 hover:text-[#e80566] hover:bg-[#e80566]/10 p-4 rounded-lg bg-[#2175bb]/5"
+          >
+            <div class="rounded-full">
               <i class="fa-solid fa-plane-departure text-4xl p-4"></i>
             </div>
             <div>
@@ -455,19 +431,41 @@
               <p class="text-sm">Travel and Tourism Industry</p>
             </div>
           </div>
+          <div
+            class="flex items-center space-x-6 hover:text-[#e80566] hover:bg-[#e80566]/10 p-4 rounded-lg bg-[#2175bb]/5"
+          >
+            <div class="rounded-full">
+              <i class="fa-solid fa-circle-dollar-to-slot text-4xl p-4"></i>
+            </div>
+            <p class="text-sm">Venture Capitals</p>
+          </div>
         </div>
 
         <!-- middle Column -->
-        <div class="space-y-9">
-          <div class="flex items-center space-x-5 bg-[#F8F8FF] p-2 rounded-3xl">
-            <div class="border-2 rounded-full hover:bg-cyan-500">
-              <i class="fa-solid fa-stethoscope text-4xl p-4"></i>
+        <div class="space-y-3">
+          <div
+            class="flex flex-row items-center space-x-6 hover:text-[#e80566] hover:bg-[#e80566]/10 p-4 rounded-lg bg-[#2175bb]/5"
+          >
+            <div class="rounded-full">
+              <i class="fas fa-industry text-4xl p-4"></i>
             </div>
-            <p class="text-sm">Hospital Industry</p>
+            <div>
+              <p class="text-sm">Wine & Beverage Manufacturing Companies</p>
+              <p class="text-sm">Paint Manufacturing Companies</p>
+            </div>
           </div>
-
-          <div class="flex items-center space-x-6">
-            <div class="border-2 rounded-full hover:bg-cyan-500">
+          <div
+            class="flex items-center space-x-6 hover:text-[#e80566] hover:bg-[#e80566]/10 p-4 rounded-lg bg-[#2175bb]/5"
+          >
+            <div class="rounded-full">
+              <i class="fas fa-water text-4xl p-4"></i>
+            </div>
+            <p class="text-sm">Hydropower Generation Companies</p>
+          </div>
+          <div
+            class="flex items-center space-x-6 hover:text-[#e80566] hover:bg-[#e80566]/10 p-4 rounded-lg bg-[#2175bb]/5"
+          >
+            <div class="rounded-full">
               <i class="fas fa-university text-4xl p-4"></i>
             </div>
             <div>
@@ -477,36 +475,37 @@
               <p class="text-sm">Asset & Securities Management Companies</p>
             </div>
           </div>
-          <div class="flex items-center space-x-5">
-            <div class="border-2 rounded-full hover:bg-cyan-500">
-              <i class="fas fa-water text-4xl p-4"></i>
-            </div>
-            <p class="text-sm">Hydropower Generation Companies</p>
-          </div>
         </div>
 
         <!-- Right Column -->
-        <div class="space-y-9">
-          <div class="flex items-center space-x-6">
-            <div class="border-2 rounded-full hover:bg-cyan-500">
-              <i class="fa-solid fa-building text-4xl p-4"></i>
+        <div class="space-y-3">
+          <div
+            class="flex items-center space-x-6 hover:text-[#e80566] hover:bg-[#e80566]/10 p-4 rounded-lg bg-[#2175bb]/5"
+          >
+            <div class="rounded-full">
+              <i class="fa-solid fa-stethoscope text-4xl p-4"></i>
+            </div>
+            <p class="text-sm">Hospital Industry</p>
+          </div>
+
+          <div
+            class="flex items-center space-x-6 hover:text-[#e80566] hover:bg-[#e80566]/10 p-4 rounded-lg bg-[#2175bb]/5"
+          >
+            <div class="rounded-full">
+              <i class="fas fa-chart-line text-4xl p-4"></i>
+            </div>
+            <p class="text-sm">Trading Companies</p>
+          </div>
+          <div
+            class="flex items-center space-x-6 hover:text-[#e80566] hover:bg-[#e80566]/10 p-4 rounded-lg bg-[#2175bb]/5"
+          >
+            <div class="rounded-full">
+              <i class="fa-solid fa-building text-3xl p-4"></i>
             </div>
             <div>
               <p class="text-sm">Water and Environment Development Sector</p>
               <p class="text-sm">Education and Inclusion Development Sector</p>
             </div>
-          </div>
-          <div class="flex items-center space-x-5">
-            <div class="border-2 rounded-full hover:bg-cyan-500">
-              <i class="fa-solid fa-circle-dollar-to-slot text-4xl p-4"></i>
-            </div>
-            <p class="text-sm">Venture Capitals</p>
-          </div>
-          <div class="flex items-center space-x-5">
-            <div class="border-2 rounded-full hover:bg-cyan-500">
-              <i class="fas fa-chart-line text-4xl p-4"></i>
-            </div>
-            <p class="text-sm">Trading Companies</p>
           </div>
         </div>
       </div>
@@ -515,13 +514,13 @@
     <!-- our clients ---------------------------------------------------------------- -->
 
     <!-- Our Clients Section -->
-    <div id="clients" class="my-14 w-full">
-      <h2 class="text-4xl font-bold text-center bg-[#F8F8FF] p-8 my-8">
+    <div class="my-14 w-full">
+      <h2 class="text-4xl font-bold text-center bg-[#2175bb]/5 p-8 my-8">
         Our Clients
       </h2>
 
       <!-- Swiper Container -->
-      <div class="relative">
+      <div class="relative md:mx-16">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper flex items-center justify-center">
             <div class="swiper-slide">
@@ -552,22 +551,168 @@
         </div>
 
         <!-- Pagination Dots -->
-        <div class="swiper-pagination !static mt-4"></div>
+        <div class="swiper-pagination client-pagination !static mt-4"></div>
+      </div>
+    </div>
+    <!-- Testimonial Section -->
+    <div id="testimonials" class="w-full">
+      <h2 class="text-4xl font-bold text-center bg-[#2175bb]/5 p-8">
+        Testimonials
+      </h2>
+      <div class="py-10">
+        <div class="relative md:mx-16">
+          <!-- Swiper Container -->
+          <div class="swiper testimonialSwiper">
+            <div class="swiper-wrapper">
+              <!-- Testimonial 1 -->
+              <div class="swiper-slide p-6 rounded-lg text-center">
+                <p class="text-gray-700">
+                  <span class="text-5xl text-blue-200">“</span>
+                  B&A Associates provided us with outstanding auditing and
+                  assurance services. Their professionalism and expertise helped
+                  our company navigate complex financial regulations seamlessly.
+                  Highly recommend their team!
+                  <span
+                    class="text-5xl text-blue-200 inline-block align-text-bottom -mb-8"
+                    >”</span
+                  >
+                </p>
+                <div class="flex flex-col items-center justify-center mt-6">
+                  <img
+                    src="./team1.jpg"
+                    class="w-24 h-24 rounded-full m-2"
+                    alt=""
+                  />
+                  <h3 class="font-semibold text-lg">John Smith</h3>
+                  <p class="text-gray-500 text-sm">CEO, FinTech Solutions</p>
+                </div>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="swiper-slide p-6 rounded-lg text-center">
+                <p class="text-gray-700">
+                  <span class="text-5xl text-blue-200">“</span>
+                  We entrusted B&A Associates with our tax advisory needs, and
+                  they delivered beyond expectations. Their attention to detail
+                  and deep knowledge of financial regulations saved us
+                  significant costs!
+                  <span
+                    class="text-5xl text-blue-200 inline-block align-text-bottom -mb-8"
+                    >”</span
+                  >
+                </p>
+                <div class="flex flex-col items-center justify-center mt-6">
+                  <img
+                    src="./profile.png"
+                    class="w-24 h-24 rounded-full m-2"
+                    alt=""
+                  />
+
+                  <h3 class="font-bold text-lg mt-4">Rajesh Hamal</h3>
+                  <p class="text-gray-500 text-sm">
+                    Managing Director, Himalayan Ventures
+                  </p>
+                </div>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div class="swiper-slide p-6 rounded-lg text-center">
+                <p class="text-gray-700">
+                  <span class="text-5xl text-blue-200">“</span>
+                  Our business faced compliance challenges, but B&A Associates
+                  provided excellent risk advisory services. Their expertise
+                  helped us navigate complex financial requirements with
+                  confidence.
+                  <span
+                    class="text-5xl text-blue-200 inline-block align-text-bottom -mb-8"
+                    >”</span
+                  >
+                </p>
+                <div class="flex flex-col items-center justify-center mt-6">
+                  <img
+                    src="./team.png"
+                    class="w-24 h-24 rounded-full m-2"
+                    alt=""
+                  />
+                  <h3 class="font-semibold text-lg">John Smith</h3>
+                  <p class="text-gray-500 text-sm">CEO, FinTech Solutions</p>
+                </div>
+              </div>
+
+              <!-- Testimonial 4 -->
+              <div class="swiper-slide p-6 rounded-lg text-center">
+                <p class="text-gray-700">
+                  <span class="text-5xl text-blue-200">“</span>
+                  Working with B&A Associates has been a game-changer. Their
+                  team provided valuable business valuation insights that helped
+                  us make critical investment decisions with clarity and
+                  confidence.
+                  <span
+                    class="text-5xl text-blue-200 inline-block align-text-bottom -mb-8"
+                    >”</span
+                  >
+                </p>
+                <div class="flex flex-col items-center justify-center mt-6">
+                  <img
+                    src="./profile.png"
+                    class="w-24 h-24 rounded-full m-2"
+                    alt=""
+                  />
+                  <h3 class="font-semibold text-lg">John Smith</h3>
+                  <p class="text-gray-500 text-sm">CEO, FinTech Solutions</p>
+                </div>
+              </div>
+
+              <!-- Testimonial 5 -->
+              <div class="swiper-slide p-6 rounded-lg text-center">
+                <p class="text-gray-700">
+                  <span class="text-5xl text-blue-200">“</span>
+                  B&A Associates played a crucial role in helping us restructure
+                  our financial processes. Their team provided insightful
+                  guidance, making our audit procedures seamless and efficient.
+                  Their expertise is unmatched!
+                  <span
+                    class="text-5xl text-blue-200 inline-block align-text-bottom -mb-8"
+                    >”</span
+                  >
+                </p>
+
+                <div class="flex flex-col items-center justify-center mt-6">
+                  <img
+                    src="./profile.png"
+                    class="w-24 h-24 rounded-full m-2"
+                    alt=""
+                  />
+
+                  <h3 class="font-bold text-lg mt-4">Emily Carter</h3>
+                  <p class="text-gray-500 text-sm">CFO, GreenTech Solutions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination Dots -->
+          <div
+            class="swiper-pagination testimonial-pagination !static mt-4"
+          ></div>
+        </div>
       </div>
     </div>
 
     <!-- footer  -------------------------------------------------------------- -->
-    <div id="footer" class="bg-[#0a5468] text-white py-10">
+    <div id="footer" class="bg-[#2175bb] text-white pt-10">
       <div
         class="container mx-auto px-6 lg:px-20 grid grid-cols-1 md:grid-cols-3 gap-8"
       >
         <!-- Company Info -->
         <div>
-          <h2 class="text-xl font-bold">B. & A. ASSOCIATES</h2>
+          <a href="index.html"
+            ><h2 class="text-xl font-bold">B. & A. ASSOCIATES</h2></a
+          >
           <p class="mt-4 text-sm text-stone-300 hover:text-white">
             <a href="https://maps.app.goo.gl/8iK8AHC5xGPrS1378" target="_blank">
-              <i class="fa-solid fa-location-dot p-1"></i> Devkota Sadak, Mid
-              Baneshwor, Kathmandu
+              <i class="fa-solid fa-location-dot p-1"></i> Mid Baneshwor,
+              Kathmandu
             </a>
           </p>
 
@@ -582,13 +727,13 @@
             >
           </p>
           <div class="flex space-x-4 mt-4">
-            <a href="#" class="bg-[#0e7994] px-3 py-2 rounded-lg"
+            <a href="#" class="bg-[#000000]/15 px-3 py-2 rounded-lg"
               ><i class="fab fa-facebook-f"></i
             ></a>
-            <a href="#" class="bg-[#0e7994] px-3 py-2 rounded-lg"
+            <a href="#" class="bg-[#000000]/15 px-3 py-2 rounded-lg"
               ><i class="fab fa-instagram"></i
             ></a>
-            <a href="#" class="bg-[#0e7994] px-3 py-2 rounded-lg"
+            <a href="#" class="bg-[#000000]/15 px-3 py-2 rounded-lg"
               ><i class="fab fa-linkedin-in"></i
             ></a>
           </div>
@@ -624,7 +769,7 @@
         <!-- map Embed -->
         <div class=" ">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.7196065433304!2d85.33472217471571!3d27.695059826034573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1999c4639299%3A0xc89109abaeb744f3!2sDevkota%20Sadak%2C%20Kathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2sus!4v1740083908773!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d883.1438827073596!2d85.3374942!3d27.6995112!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19c3d1f48fb7%3A0x9225586c0bd190b1!2sPanaya%20Advisors%20Pvt%20Ltd.!5e0!3m2!1sen!2sus!4v1740774388965!5m2!1sen!2sus"
             width="100% "
             height="250"
             style="border: 0"
@@ -634,36 +779,49 @@
           ></iframe>
         </div>
       </div>
-    </div>
-    <!-- Copyright -->
-    <div
-      class="text-center text-white text-sm bg-[#094e60] border-t border-gray-700 p-4"
-    >
-      © Copyright <span class="font-bold">B. & A. Associates</span>. All Rights
-      Reserved <br /><span class="text-stone-00">
-        Designed & Developed by
-        <span class="font-bold">Orphic Technologies</span></span
+      <!-- Copyright -->
+      <div
+        class="text-center text-white text-sm bg-[#000000]/15 border-t border-gray-700 mt-10 p-4"
       >
+        © Copyright <span class="font-bold">B. & A. Associates</span>. All
+        Rights Reserved <br /><span class="text-stone-00">
+          Designed & Developed by
+          <span class="font-bold">Orphic Technologies</span></span
+        >
+      </div>
     </div>
 
     <script>
-      // clients logo -----------------------------------------------------
-
       document.addEventListener("DOMContentLoaded", function () {
-        var swiper = new Swiper(".mySwiper", {
+        // Clients Swiper
+        var clientSwiper = new Swiper(".mySwiper", {
           slidesPerView: 4,
           spaceBetween: 20,
           loop: true,
-          autoplay: { delay: 3000 }, // Faster autoplay for testing
-          pagination: { el: ".swiper-pagination", clickable: true },
+          autoplay: { delay: 3000 },
+          pagination: { el: ".client-pagination", clickable: true },
           breakpoints: {
             320: { slidesPerView: 2, spaceBetween: 10 },
             640: { slidesPerView: 3, spaceBetween: 15 },
             1024: { slidesPerView: 4, spaceBetween: 20 },
           },
         });
+
+        // Testimonials Swiper
+        var testimonialSwiper = new Swiper(".testimonialSwiper", {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          loop: true,
+          autoplay: { delay: 4000 },
+          pagination: { el: ".testimonial-pagination", clickable: true },
+          breakpoints: {
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          },
+        });
       });
-      // navbar -------------------------------------
+
+      // Navbar Toggle
       const menuBtn = document.getElementById("menu-btn");
       const closeMenu = document.getElementById("close-menu");
       const mobileMenu = document.getElementById("mobile-menu");
@@ -676,7 +834,7 @@
         mobileMenu.classList.add("hidden");
       });
 
-      // sliders ----------------------------------------------------
+      // Hero Slider
       let currentIndex = 0;
       const slides = document.querySelectorAll(".slide");
       const overlays = document.querySelectorAll(".overlay");
@@ -684,10 +842,7 @@
       const totalSlides = slides.length;
 
       function updateSlidePosition() {
-        // Move slides horizontally
         slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-
-        // Reset all overlays
         overlays.forEach((overlay) => overlay.classList.add("bg-opacity-0"));
         overlays[currentIndex].classList.remove("bg-opacity-0");
         overlays[currentIndex].classList.add("bg-opacity-50");
@@ -706,13 +861,10 @@
       document.getElementById("nextSlide").addEventListener("click", nextSlide);
       document.getElementById("prevSlide").addEventListener("click", prevSlide);
 
-      // Auto Slide Every 5 Seconds
       setInterval(nextSlide, 5000);
-
-      // Initialize first slide with proper overlay
       updateSlidePosition();
 
-      // our services  pop-up ----------------------------------------------
+      // Service Popup
       function openModal() {
         document.getElementById("serviceModal").classList.remove("hidden");
       }
