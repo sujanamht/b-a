@@ -28,53 +28,54 @@
       * {
         font-family: "Outfit", sans-serif;
       }
-      p {
-        color: #575757;
-      }
     </style>
   </head>
-  <body>
+  <body class="text-[#575757]">
     <!-- Top Bar -->
-    <div
-      class="bg-[#2175bb] text-white text-xs p-2 flex justify-center space-x-4 md:justify-between"
-    >
-      <div class="space-x-4 md:ml-6">
-        <a href="mailto:birajacharya@gmail.com" class="  "
-          ><i class="fas fa-envelope"></i>
-          <span class="hidden md:inline"> birajacharya@gmail.com</span></a
-        >
-        <a href="tel:9801912832" class="  "
-          ><i class="fas fa-phone"></i>
-          <span class="hidden md:inline"> +977 9801912832</span></a
-        >
-        <a
-          href="https://maps.app.goo.gl/rNTfGY7q6R374qHz5"
-          target="_blank"
-          class=" "
-          ><i class="fa-solid fa-location-dot"></i>
-          <span class="hidden md:inline"> Mid Baneshwor, Kathmandu</span>
-        </a>
-      </div>
-      <div class="space-x-4 md:mr-6">
-        <a
-          href="https://www.facebook.com/"
-          class="rounded text-white hover:text-blue-400"
-        >
-          <i class="fab fa-facebook fa-lg"></i>
-        </a>
-        <a href="#" class="rounded text-white hover:text-blue-400"
-          ><i class="fab fa-linkedin fa-lg"></i
-        ></a>
+    <div class="bg-[#2175bb]">
+      <div
+        class="md:mx-20 text-white text-xs py-2 flex justify-center space-x-4 md:justify-between"
+      >
+        <div class="space-x-4">
+          <a href="mailto:birajacharya@gmail.com" class="  "
+            ><i class="fas fa-envelope"></i>
+            <span class="hidden md:inline ml-1"> birajacharya@gmail.com</span></a
+          >
+          <a href="tel:9801912832" class="  "
+            ><i class="fas fa-phone"></i>
+            <span class="hidden md:inline ml-1"> +977 9801912832</span></a
+          >
+          <a
+            href="https://maps.app.goo.gl/rNTfGY7q6R374qHz5"
+            target="_blank"
+            class=" "
+            ><i class="fa-solid fa-location-dot"></i>
+            <span class="hidden md:inline ml-1"> Mid Baneshwor, Kathmandu</span>
+          </a>
+        </div>
+        <div class="space-x-4 -ml-20">
+          <a
+            href="https://www.facebook.com/"
+            class="rounded text-white hover:text-blue-400"
+          >
+            <i class="fab fa-facebook fa-lg"></i>
+          </a>
+          <a href="#" class="rounded text-white hover:text-blue-400"
+            ><i class="fab fa-linkedin fa-lg"></i
+          ></a>
+        </div>
       </div>
     </div>
 
     <!-- Navbar -------------------------------------------------- -->
     <!-- Navbar -->
     <nav
-      class="relative text-gray-700 shadow-md p-3 flex justify-between items-center bg-white"
+      class="mx-6 md:mx-20 relative py-3 flex justify-between items-center bg-white"
     >
       <a href="index.html">
-        <div class="text-xl md:text-3xl p-4 font-semibold hover:text-[#e80566]">
+        <div
+          class="text-xl md:text-3xl py-2 font-semibold hover:text-[#e80566]"
+        >
           <h2>B. & A. Associates</h2>
         </div></a
       >
@@ -199,13 +200,13 @@
       <!-- Navigation Controls -->
       <button
         id="prevSlide"
-        class="absolute left-4 top-1/2 transform -translate-y-1/2 hover:bg-gray-800 text-white p-2 rounded-lg"
+        class="absolute md:left-4 top-1/2 transform -translate-y-1/2 hover:bg-gray-800 text-white p-2 rounded-lg"
       >
         ❮
       </button>
       <button
         id="nextSlide"
-        class="absolute right-4 top-1/2 transform -translate-y-1/2 hover:bg-gray-800 text-white p-2 rounded-lg"
+        class="absolute right-1 md:right-4 top-1/2 transform -translate-y-1/2 hover:bg-gray-800 text-white p-2 rounded-lg"
       >
         ❯
       </button>
@@ -214,7 +215,7 @@
     <!-- About us -------------------------------------------------- -->
 
     <section
-      class="md:mx-28 m-10 grid lg:grid-cols-2 gap-4 flex items-center justify-center"
+      class="md:mx-20 m-10 grid lg:grid-cols-2 gap-4 flex items-center justify-center"
     >
       <div
         class="h-[200px] md:h-[300px] bg-no-repeat"
@@ -226,13 +227,17 @@
             ABOUT B. & A. ASSOCIATES
           </h2>
           <p class="mt-2 md:mt-4 text-md text-justify">
-            B. & A. Associates provides innovative financial solutions with
-            expertise in auditing, taxation, and advisory services... it
-            provides innovative financial solutions with expertise in auditing,
-            taxation, and advisory services... B. & A. Associates provides
-            innovative financial solutions with expertise in auditing, taxation,
-            and advisory services... it provides innovative financial solutions
-            with expertise in auditing, taxation, and advisory services...
+            B. & A. Associates is a distinguished chartered accountancy firm
+            based in Kathmandu, Nepal, providing comprehensive financial
+            solutions since 2017. With expertise in Auditing & Assurance, Risk
+            Advisory, Taxation, Management Consulting, and Accountancy Services,
+            B. & A. is committed to delivering innovative, ethical, and
+            client-centric financial services. Backed by a team of highly
+            skilled professionals, the firm serves diverse industries, including
+            banking, hospitality, manufacturing, hydropower, and education,
+            ensuring compliance, transparency, and strategic financial growth.
+            Integrity, professionalism, and excellence define B. & A. Associates
+            as a trusted partner in Nepal’s financial landscape.
           </p>
           <button
             class="my-4 text-white px-4 py-2 bg-[#2175bb] rounded hover:bg-[#e80566]"
@@ -245,11 +250,11 @@
 
     <!-- Our services   -------------------------------------------------- -->
     <div id="services" class="    ">
-      <h2 class="text-4xl font-bold text-center bg-[#2175bb]/5 p-8 my-8">
-        Our Services
-      </h2>
+      <div class="text-3xl md:text-5xl font-bold bg-[#2175bb]/5 py-10 my-8">
+        <h2 class="ml-10 md:ml-20">Our Services</h2>
+      </div>
 
-      <div class="mx-10 md:mx-28 mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="mx-10 md:mx-20 mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Auditing and Assurance (Updated) -->
         <div
           class="bg-[#2175bb]/10 rounded-xl shadow-xl flex flex-col justify-center border-b-4 border-[#2175bb] hover:scale-105 transition duration-300"
@@ -389,12 +394,12 @@
     </div>
 
     <!-- Industries we serve -------------------------------------------------- -->
-    <div class="my-20 bg-white text-black">
-      <h2 class="text-4xl font-bold text-center bg-[#2175bb]/5 p-8 my-8">
-        Industries We Serve
-      </h2>
+    <div class="my-20 bg-white">
+      <div class="text-3xl md:text-5xl font-bold bg-[#2175bb]/5 py-10 my-8">
+        <h2 class="ml-10 md:ml-20">Industries We Serve</h2>
+      </div>
       <div
-        class="m-6 md:mx-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"
+        class="m-6 md:mx-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"
       >
         <!-- Left Column -->
         <div class="space-y-3">
@@ -512,40 +517,38 @@
     </div>
 
     <!-- our clients ---------------------------------------------------------------- -->
-
-    <!-- Our Clients Section -->
     <div class="my-14 w-full">
-      <h2 class="text-4xl font-bold text-center bg-[#2175bb]/5 p-8 my-8">
-        Our Clients
-      </h2>
+      <div class="text-3xl md:text-5xl font-bold bg-[#2175bb]/5 py-10 my-8">
+        <h2 class="ml-10 md:ml-20">Our Clients</h2>
+      </div>
 
       <!-- Swiper Container -->
       <div class="relative md:mx-16">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper flex items-center justify-center">
             <div class="swiper-slide">
-              <img src="logo/accor.png" class="h-32 mx-auto" />
+              <img src="logo/accor.png" class="h-24 mx-auto" />
             </div>
             <div class="swiper-slide">
-              <img src="logo/hotelmechi.png" class="h-32 mx-auto" />
+              <img src="logo/hotelmechi.png" class="h-24 mx-auto" />
             </div>
             <div class="swiper-slide">
-              <img src="logo/ramada.png" class="h-32 mx-auto" />
+              <img src="logo/ramada.png" class="h-24 mx-auto" />
             </div>
             <div class="swiper-slide">
-              <img src="logo/bigdaddy.png" class="h-32 mx-auto" />
+              <img src="logo/bigdaddy.png" class="h-24 mx-auto" />
             </div>
             <div class="swiper-slide">
-              <img src="logo/sarovar.png" class="h-32 mx-auto" />
+              <img src="logo/sarovar.png" class="h-24 mx-auto" />
             </div>
             <div class="swiper-slide">
-              <img src="logo/abinfra.png" class="h-32 mx-auto" />
+              <img src="logo/abinfra.png" class="h-24 mx-auto" />
             </div>
             <div class="swiper-slide">
-              <img src="logo/dhi.png" class="h-32 mx-auto" />
+              <img src="logo/dhi.png" class="h-24 mx-auto" />
             </div>
             <div class="swiper-slide">
-              <img src="logo/ewc.png" class="h-32 mx-auto" />
+              <img src="logo/ewc.png" class="h-24 mx-auto" />
             </div>
           </div>
         </div>
@@ -554,11 +557,11 @@
         <div class="swiper-pagination client-pagination !static mt-4"></div>
       </div>
     </div>
-    <!-- Testimonial Section -->
+    <!-- Testimonial Section ------------------------------------------------- -->
     <div id="testimonials" class="w-full">
-      <h2 class="text-4xl font-bold text-center bg-[#2175bb]/5 p-8">
-        Testimonials
-      </h2>
+      <div class="text-3xl md:text-5xl font-bold bg-[#2175bb]/5 py-10 my-8">
+        <h2 class="ml-10  md:ml-20">Testimonials</h2>
+      </div>
       <div class="py-10">
         <div class="relative md:mx-16">
           <!-- Swiper Container -->
@@ -803,7 +806,7 @@
           breakpoints: {
             320: { slidesPerView: 2, spaceBetween: 10 },
             640: { slidesPerView: 3, spaceBetween: 15 },
-            1024: { slidesPerView: 4, spaceBetween: 20 },
+            1024: { slidesPerView: 4, spaceBetween: 15 },
           },
         });
 

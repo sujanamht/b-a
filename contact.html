@@ -32,7 +32,7 @@
       }
     </style>
   </head>
-  <body>
+  <body class="text-[#575757]">
     <!-- Top Bar -->
     <div
       class="bg-[#2175bb] text-white text-xs p-2 flex justify-center space-x-4 md:justify-between"
@@ -204,28 +204,34 @@
         class="border mt-10 lg:mt-auto border-gray-300 h-30 p-4 lg:w-2/5 bg-white rounded shadow"
       >
         <div class="flex flex-col justify-stretch space-y-4">
+          <input
+            type="text"
+            class="w-full border border-gray-300 bg-transparent p-2 rounded"
+            placeholder="Your Name"
+          />
           <div class="flex flex-row justify-evenly space-x-3">
-            <textarea
+            <input
+              type="text"
               class="w-full border border-gray-300 bg-transparent p-2 rounded"
-              rows="1"
-              placeholder="Your Name"
-            ></textarea>
-            <textarea
+              placeholder="Phone number"
+            />
+
+            <input
+              type="text"
               class="w-full border border-gray-300 bg-transparent p-2 rounded"
-              rows="1"
-              placeholder="Your email"
-            ></textarea>
+              placeholder="Email Address"
+            />
           </div>
-          <textarea
+          <input
+            type="text"
             class="border border-gray-300 bg-transparent p-2 rounded"
-            rows="1"
             placeholder="Subject"
-          ></textarea>
-          <textarea
+          />
+          <input
+            type="text"
             class="border border-gray-300 bg-transparent p-2 rounded"
-            rows="3"
             placeholder="Your Message"
-          ></textarea>
+          />
           <button
             class="bg-[#2175bb] hover:bg-[#e80566] text-white font-semibold py-2 px-6 rounded"
           >
